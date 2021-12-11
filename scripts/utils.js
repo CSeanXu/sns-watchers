@@ -9,7 +9,25 @@ const prettier = require('prettier')
  * @returns Promise<string>
  */
 async function fetchFile(url) {
-  return fetch(url).then((res) => res.text())
+  return fetch(url, {
+    headers: {
+      "accept": "*/*",
+      "accept-language": "en,zh;q=0.9,zh-CN;q=0.8,zh-TW;q=0.7",
+      "cache-control": "no-cache",
+      "pragma": "no-cache",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36",
+      "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Google Chrome\";v=\"96\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "sec-fetch-dest": "script",
+      "sec-fetch-mode": "no-cors",
+      "sec-fetch-site": "cross-site",
+      "Referer": "https://www.binance.com/",
+      "Referrer-Policy": "origin-when-cross-origin"
+    },
+    "body": null,
+    "method": "GET",
+  }).then((res) => res.text())
 }
 
 /**

@@ -1,9 +1,13 @@
+const url = require('url')
 const path = require('path')
 const cheerio = require('cheerio')
 const { download: originalDownload } = require('./utils')
 
-const basedir = path.resolve(__dirname, '../twitter.com')
-const url = 'https://twitter.com/'
+// const basedir = path.resolve(__dirname, '../twitter.com')
+// const url = 'https://twitter.com'
+
+const basedir = path.resolve(__dirname, '../binance-igo.com')
+const URL = 'https://www.binance.com/en/nft/event/gameofferinglandingpage'
 
 /**
  * wipe dynamic data.
@@ -46,6 +50,13 @@ const download = (url, saveAs) => {
 /** @param {string} dir */
 const dest = (dir) => path.resolve(basedir, dir)
 
+
+function binanceScriptFilterFunc(src) {
+  const parsed = new url.URL(src)
+
+  return parsed.hostname === 'bin.bnbstatic.com'
+}
+
 /**
  * getAllScriptUrls.
  *
@@ -53,18 +64,36 @@ const dest = (dir) => path.resolve(basedir, dir)
  * @returns {Array<string>}
  */
 function getAllScriptUrls(html) {
-  const $ = cheerio.load(html)
-  const scripts = $('link[as=script]')
+
   const urls = []
-  scripts.each((_, script) => {
-    urls.push($(script).attr('href'))
+
+  const $ = cheerio.load(html)
+
+  const _scripts = $('script').get()
+
+  for (let i = 0; i < _scripts.length; i++) {
+
+    const script = _scripts[i]
+
+    const scriptSrc = script.attribs.src
+
+    scriptSrc && binanceScriptFilterFunc(scriptSrc) && urls.push(scriptSrc)
+
+  }
+
+  const scripts = $('link[as=script]')
+
+  scripts.each((_, _script) => {
+    urls.push($(_script).attr('href'))
   })
+
   return urls
 }
 
 async function start() {
-  const html = await download(url, null)
+  const html = await download(URL, dest('page.html'))
   const scriptUrls = getAllScriptUrls(html)
+
   const tasks = scriptUrls.map(async (url) => {
     const fileName = url
       .split('/')

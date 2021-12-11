@@ -51,5 +51,4 @@ jobs:
           title: ${{ env.TITLE }}
           body: ${{ env.CONTENT }}
           assignees: |
-            guanbinrui
-            unclebill
+            CSeanXu

@@ -1,4 +1,4 @@
-name: Take snapshot of twitter
+name: Take snapshot of targets
 
 on:
   schedule:
@@ -42,7 +42,7 @@ jobs:
         if: ${{ env.GIT_DIFF != '' }}
         run: |
           git add .
-          git config --local user.email "bot@mask.io"
+          git config --local user.email "bot@sean.io"
           git config --local user.name "commit bot"
-          git commit -m "`date '+twitter: snapshot at %Y-%m-%d %H:%M'`"
+          git commit -m "`date '+Binance NFT: snapshot at %Y-%m-%d %H:%M'`"
           git push origin master
