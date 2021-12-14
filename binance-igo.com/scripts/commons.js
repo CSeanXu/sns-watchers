@@ -43554,7 +43554,7 @@
                     width: '100%',
                     height: 'auto',
                     mt: ['32px', '10px', '10px'],
-                    sx: { position: 'relative', minHeight: '214px' },
+                    sx: { position: 'relative', minHeight: ['166px', '214px', '166px'] },
                     ref: t,
                   },
                   D(
