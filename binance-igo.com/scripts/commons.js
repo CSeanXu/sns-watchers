@@ -56641,7 +56641,8 @@
           A = void 0 === M ? 0 : M,
           R = e.arrowPadding,
           P = void 0 === R ? 0 : R,
-          D = (0, r.__rest)(e, [
+          D = e.fallbackPlacements,
+          Z = (0, r.__rest)(e, [
             'arrow',
             'boundary',
             'container',
@@ -56659,100 +56660,101 @@
             'resize',
             'boxOffset',
             'arrowPadding',
+            'fallbackPlacements',
           ])
         ;(b = b || x || 'top'), (b = 'rtl' === (0, c.Z)() ? f.O9[b] : b)
-        var Z = i.useRef(null != _).current,
-          L = i.useState(null),
-          B = L[0],
-          F = L[1],
-          j = i.useState(null),
-          z = j[0],
-          U = j[1],
-          H = i.useState(null),
-          V = H[0],
-          W = H[1],
-          Y = i.useRef(0),
-          G = i.useRef(),
-          q = (0, u.D)(B, z, {
+        var L = i.useRef(null != _).current,
+          B = i.useState(null),
+          F = B[0],
+          j = B[1],
+          z = i.useState(null),
+          U = z[0],
+          H = z[1],
+          V = i.useState(null),
+          W = V[0],
+          Y = V[1],
+          G = i.useRef(0),
+          q = i.useRef(),
+          K = (0, u.D)(F, U, {
             placement: b,
             modifiers: [
               { name: 'eventListeners', options: { scroll: N, resize: O } },
-              { name: 'arrow', options: { element: V, padding: P } },
+              { name: 'arrow', options: { element: W, padding: P } },
               { name: 'offset', options: { offset: [A || 0, f.SG] } },
               { name: 'computeStyles', options: { adaptive: !1, gpuAcceleration: !1 } },
-              { name: 'flip', options: { boundary: h } },
+              { name: 'flip', options: { boundary: h, fallbackPlacements: D } },
             ],
           }),
-          K = q.state,
-          X = q.styles,
-          $ = q.attributes,
-          J = q.update,
-          Q = i.useMemo(
+          X = K.state,
+          $ = K.styles,
+          J = K.attributes,
+          Q = K.update,
+          ee = i.useMemo(
             function () {
-              return (0, f.BP)(null === K || void 0 === K ? void 0 : K.placement)
+              return (0, f.BP)(null === X || void 0 === X ? void 0 : X.placement)
             },
-            [null === K || void 0 === K ? void 0 : K.placement],
+            [null === X || void 0 === X ? void 0 : X.placement],
           ),
-          ee = i.useState(_),
-          te = ee[0],
-          ne = ee[1]
-        Z && ((k = void 0), _ !== te && ne(_)),
+          te = i.useState(_),
+          ne = te[0],
+          re = te[1]
+        L && ((k = void 0), _ !== ne && re(_)),
           i.useEffect(
             function () {
               return function () {
-                G.current && window.clearTimeout(G.current), (G.current = 0)
+                q.current && window.clearTimeout(q.current), (q.current = 0)
               }
             },
-            [te],
+            [ne],
           )
-        var re = (0, o.Z)(F, t),
-          ie =
+        var ie = (0, o.Z)(j, t),
+          oe =
             'click' === k
               ? function (e) {
-                  G.current && window.clearTimeout(G.current),
-                    (Y.current = 0),
+                  q.current && window.clearTimeout(q.current),
                     (G.current = 0),
-                    ne(!te),
-                    J && J(),
+                    (q.current = 0),
+                    re(!ne),
+                    Q && Q(),
                     S && S(e)
                 }
               : S,
-          oe =
-            'hover' === k
-              ? function (e) {
-                  !te &&
-                    window.performance.now() - Y.current > 500 &&
-                    ((G.current = y
-                      ? G.current ||
-                        window.setTimeout(function () {
-                          return ne(!0)
-                        }, y)
-                      : (ne(!0), 0)),
-                    J && J(),
-                    (Y.current = window.performance.now())),
-                    D.onMouseMove && D.onMouseMove(e)
-                }
-              : D.onMouseMove,
           ae =
             'hover' === k
               ? function (e) {
-                  G.current && window.clearTimeout(G.current),
-                    (Y.current = 0),
-                    (G.current = 0),
-                    ne(!1),
-                    J && J(),
-                    D.onMouseLeave && D.onMouseLeave(e)
+                  !ne &&
+                    window.performance.now() - G.current > 500 &&
+                    ((q.current = y
+                      ? q.current ||
+                        window.setTimeout(function () {
+                          return re(!0)
+                        }, y)
+                      : (re(!0), 0)),
+                    Q && Q(),
+                    (G.current = window.performance.now())),
+                    Z.onMouseMove && Z.onMouseMove(e)
                 }
-              : D.onMouseLeave
+              : Z.onMouseMove,
+          se =
+            'hover' === k
+              ? function (e) {
+                  q.current && window.clearTimeout(q.current),
+                    (G.current = 0),
+                    (q.current = 0),
+                    re(!1),
+                    Q && Q(),
+                    Z.onMouseLeave && Z.onMouseLeave(e)
+                }
+              : Z.onMouseLeave
         return i.createElement(
           a.Z,
-          (0, r.__assign)({ ref: re }, D, {
+          (0, r.__assign)({ ref: ie }, Z, {
             __css: { display: 'inline-block', position: 'relative' },
-            onClick: ie,
-            onMouseMove: oe,
-            onMouseLeave: ae,
+            onClick: oe,
+            onMouseMove: ae,
+            onMouseLeave: se,
           }),
-          i.createElement(l.ZP, { in: te, timeout: f.x9 }, function (e) {
+          i.createElement(l.ZP, { in: ne, timeout: f.x9 }, function (e) {
             return m || T
               ? i.createElement(
                   s.ZP,
@@ -56763,13 +56765,13 @@
                       {
                         open: !0,
                         arrow: p,
-                        arrowStyle: X.arrow,
-                        style: (0, r.__assign)((0, r.__assign)((0, r.__assign)({}, X.popper), f.hy), Q[e]),
+                        arrowStyle: $.arrow,
+                        style: (0, r.__assign)((0, r.__assign)((0, r.__assign)({}, $.popper), f.hy), ee[e]),
                         bg: I,
-                        arrowRef: W,
-                        ref: U,
+                        arrowRef: Y,
+                        ref: H,
                       },
-                      $.popper,
+                      J.popper,
                     ),
                     v,
                   ),
@@ -56780,13 +56782,13 @@
                     {
                       open: !0,
                       arrow: p,
-                      arrowStyle: X.arrow,
-                      style: (0, r.__assign)((0, r.__assign)((0, r.__assign)({}, X.popper), f.hy), Q[e]),
+                      arrowStyle: $.arrow,
+                      style: (0, r.__assign)((0, r.__assign)((0, r.__assign)({}, $.popper), f.hy), ee[e]),
                       bg: I,
-                      arrowRef: W,
-                      ref: U,
+                      arrowRef: Y,
+                      ref: H,
                     },
-                    $.popper,
+                    J.popper,
                   ),
                   v,
                 )
