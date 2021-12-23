@@ -82,11 +82,11 @@
           },
         },
         A = u().createElement,
-        H = (0, E.F4)(['from{transform:translateY(0px);}50%{transform:translateY(8px);}0{transform:translateY(0px);}']),
-        W = (0, E.iv)(['', ' 1.5s ease-in-out 0.5s infinite'], H),
+        W = (0, E.F4)(['from{transform:translateY(0px);}50%{transform:translateY(8px);}0{transform:translateY(0px);}']),
+        H = (0, E.iv)(['', ' 1.5s ease-in-out 0.5s infinite'], W),
         j = (0, E.ZP)(f.Z).withConfig({ displayName: 'Header1__CircleAnimationBox', componentId: 'ptpp64-0' })(
           ['animation:', ';'],
-          W,
+          H,
         )
       function B(t) {
         var e = (0, m.ZK)(),
@@ -235,9 +235,9 @@
           ),
         )
       }
-      const G = u().memo(B)
-      var M = o('GDnE'),
-        R = o('3733'),
+      const R = u().memo(B)
+      var G = o('GDnE'),
+        M = o('3733'),
         U = u().createElement
       function O(t) {
         var e,
@@ -280,7 +280,7 @@
             ),
           'artFont' == t.mainTitle &&
             (null === t || void 0 === t ? void 0 : t.mainTitleImage) &&
-            U(R.Z, {
+            U(M.Z, {
               mb: ['24px', '24px', '35px'],
               src: ''.concat((0, z.U1)(null === t || void 0 === t ? void 0 : t.mainTitleImage)),
               width: ['287px', '370px', '392px'],
@@ -289,8 +289,8 @@
             U(
               g.Z,
               ((e = { fontWeight: 500, textAlign: 'center', fontSize: [16, 20, 32], width: a }),
-              (0, M.Z)(e, 'textAlign', 'center'),
-              (0, M.Z)(e, 'mb', ['24px', '24px', '24px']),
+              (0, G.Z)(e, 'textAlign', 'center'),
+              (0, G.Z)(e, 'mb', ['24px', '24px', '24px']),
               e),
               o(''.concat(n, '-').concat(i, '-').concat(r, '-subtitle-').concat(l), {
                 defaultValue: null === t || void 0 === t ? void 0 : t.subtitle,
@@ -355,7 +355,7 @@
                 ),
               'artFont' == t.mainTitle &&
                 (null === t || void 0 === t ? void 0 : t.mainTitleImage) &&
-                _(R.Z, {
+                _(M.Z, {
                   src: (0, z.U1)(null === t || void 0 === t ? void 0 : t.mainTitleImage),
                   width: ['266px', '207px', ' 326px'],
                   sx: { position: 'relative', zIndex: 9 },
@@ -893,21 +893,25 @@
           V = E[1],
           D = (0, c.useState)(320),
           A = D[0],
-          H = D[1],
-          W = (0, c.useMemo)(
+          W = D[1],
+          H = (0, c.useState)(320),
+          j = H[0],
+          B = H[1],
+          R = (0, c.createRef)(null),
+          G = (0, c.useMemo)(
             function () {
               return (0, l.Z)((0, l.Z)({}, S[F]), {}, { index: F })
             },
             [F, S],
           ),
-          j = (0, c.useMemo)(
+          U = (0, c.useMemo)(
             function () {
               var t = S.length
               return { prev: t > 4 && F > 3, next: t > 4 && F < t - 1 }
             },
             [F, S],
           ),
-          B = (0, c.useMemo)(
+          O = (0, c.useMemo)(
             function () {
               return F > 3 ? (r ? 129 : a ? 169 : 136) * (3 - F) : 0
             },
@@ -916,18 +920,24 @@
         return (
           (0, c.useEffect)(
             function () {
-              var t, e
-              ;(0, Z.pS)(
-                (0, z.U1)(
+              var t,
+                e,
+                o =
                   (null === (t = S[0]) || void 0 === t ? void 0 : t.workImage) ||
-                    (null === (e = S[0]) || void 0 === e ? void 0 : e.workCover),
-                ),
-                function (t) {
-                  H(Math.min(t, 640))
-                },
-              )
+                  (null === (e = S[0]) || void 0 === e ? void 0 : e.workCover)
+              ;(0, Z.pS)((0, z.U1)(o), function (t, e) {
+                var o = t
+                ;+t > 0 && (o = Math.round((j / e) * t)), W(o)
+              })
             },
-            [S],
+            [S, j],
+          ),
+          (0, c.useEffect)(
+            function () {
+              var t = R.current.offsetWidth
+              t && B(t)
+            },
+            [R],
           ),
           Nt(
             Q,
@@ -962,7 +972,7 @@
                   S.map(function (t, e) {
                     return Nt(
                       T.Z,
-                      { key: e, height: A },
+                      { ref: R, key: e, height: A },
                       Nt(wt.Z, {
                         auto: !1,
                         preview: !1,
@@ -980,8 +990,8 @@
                   Nt(
                     T.Z,
                     { width: '100%', mt: ['16px', '16px', '24px'], sx: { overflow: 'hidden', position: 'relative' } },
-                    j.prev &&
-                      Nt(R.Z, {
+                    U.prev &&
+                      Nt(M.Z, {
                         width: '24px',
                         height: '24px',
                         sx: {
@@ -999,7 +1009,7 @@
                       }),
                     Nt(
                       f.Z,
-                      { sx: { transform: 'translateX('.concat(B, 'px)') } },
+                      { sx: { transform: 'translateX('.concat(O, 'px)') } },
                       S.map(function (t, e) {
                         return Nt(
                           T.Z,
@@ -1013,7 +1023,7 @@
                               borderRadius: '8px',
                               marginRight: ['8px', '15px', '25px'],
                               cursor: 'pointer',
-                              opacity: W.index === e ? '1' : '0.6',
+                              opacity: G.index === e ? '1' : '0.6',
                             },
                             onClick: function () {
                               null === n || void 0 === n || n.current.slick.slickGoTo(e)
@@ -1029,8 +1039,8 @@
                         )
                       }),
                     ),
-                    j.next &&
-                      Nt(R.Z, {
+                    U.next &&
+                      Nt(M.Z, {
                         width: '24px',
                         height: '24px',
                         src: ''.concat(b.Xs, '/image/julia/nft/naraka/caret.svg'),
@@ -1043,7 +1053,7 @@
               ),
               S.map(function (t, e) {
                 return (
-                  e === W.index &&
+                  e === G.index &&
                   Nt(
                     f.Z,
                     { key: e, flexDirection: 'column', pb: S.length > 1 ? [0, 58, 90] : 0, flex: 1 },
@@ -1115,7 +1125,7 @@
       }
       var Dt = u().createElement,
         At = { img: 'IMAGE', video: 'VIDEO', audio: 'AUDIO' }
-      const Ht = function (t) {
+      const Wt = function (t) {
         var e,
           o = (0, m.ZK)(),
           n = t.bg,
@@ -1147,7 +1157,7 @@
                   (null === (e = b[0]) || void 0 === e ? void 0 : e.workCover)
               ;(0, Z.pS)((0, z.U1)(o), function (t, e) {
                 var o = t
-                ;+t > 320 && (o = Math.round((I / e) * t)), C(o)
+                ;+t > 0 && (o = Math.round((I / e) * t)), C(o)
               })
             },
             [b, I],
@@ -1269,7 +1279,7 @@
           )
         )
       }
-      var Wt = u().createElement
+      var Ht = u().createElement
       const jt = function (t) {
         var e,
           o = (0, m.ZK)(),
@@ -1293,12 +1303,12 @@
           F = E[0],
           D = E[1],
           A = (0, c.useState)(320),
-          H = A[0],
-          W = A[1],
+          W = A[0],
+          H = A[1],
           j = (0, c.useState)(320),
           B = j[0],
-          G = j[1],
-          M = (0, c.createRef)(null),
+          R = j[1],
+          G = (0, c.createRef)(null),
           U = (0, c.useMemo)(
             function () {
               var t = S.length
@@ -1321,10 +1331,10 @@
         return (
           (0, c.useEffect)(
             function () {
-              var t = M.current.offsetWidth
-              t && G(t)
+              var t = G.current.offsetWidth
+              t && R(t)
             },
-            [M],
+            [G],
           ),
           (0, c.useEffect)(
             function () {
@@ -1336,13 +1346,13 @@
                 ),
                 function (t, e) {
                   var o = t
-                  ;+t > 320 && (o = Math.round((B / e) * t)), W(o)
+                  ;+t > 0 && (o = Math.round((B / e) * t)), H(o)
                 },
               )
             },
             [S, B],
           ),
-          Wt(
+          Ht(
             Q,
             {
               bgColor: v,
@@ -1351,10 +1361,10 @@
               bgImage: null === t || void 0 === t ? void 0 : t.bgImage,
               title: x ? o(''.concat(a, '-').concat(u, '-').concat(p, '-title-').concat(d), { defaultValue: x }) : '',
             },
-            Wt(
+            Ht(
               f.Z,
               { flexWrap: 'wrap', flexDirection: ['column', 'row'] },
-              Wt(
+              Ht(
                 T.Z,
                 {
                   flex: 1,
@@ -1363,7 +1373,7 @@
                   sx: { order: y ? 0 : 'right' === (null === t || void 0 === t ? void 0 : t.textAlign) ? 1 : 0 },
                 },
                 t.name &&
-                  Wt(
+                  Ht(
                     g.Z,
                     {
                       color: w,
@@ -1375,7 +1385,7 @@
                     t.name,
                   ),
                 t.text &&
-                  Wt(
+                  Ht(
                     g.Z,
                     {
                       variant: 'body1',
@@ -1393,7 +1403,7 @@
                     o(''.concat(a, '-').concat(u, '-').concat(p, '-text-').concat(d), { defaultValue: t.text }),
                   ),
                 t.buttonText &&
-                  Wt(
+                  Ht(
                     gt.Z,
                     {
                       width: '160px',
@@ -1406,7 +1416,7 @@
                         marginTop: '67px',
                       },
                     },
-                    Wt(
+                    Ht(
                       h.Z,
                       {
                         href: it(O.buttonLink, null === O || void 0 === O ? void 0 : O.linkType),
@@ -1420,7 +1430,7 @@
                     ),
                   ),
               ),
-              Wt(
+              Ht(
                 f.Z,
                 {
                   flexDirection: 'column',
@@ -1428,10 +1438,10 @@
                   width: ['343px', '352px', '492px'],
                   sx: { order: y || 'right' === (null === t || void 0 === t ? void 0 : t.textAlign) ? 0 : 1 },
                 },
-                Wt(
+                Ht(
                   T.Z,
                   { width: ['343px', '352px', '492px'] },
-                  Wt(
+                  Ht(
                     St.Z,
                     {
                       ref: n,
@@ -1442,10 +1452,10 @@
                       },
                     },
                     S.map(function (t, e) {
-                      return Wt(
+                      return Ht(
                         T.Z,
-                        { ref: M, key: e, height: H },
-                        Wt(wt.Z, {
+                        { ref: G, key: e, height: W },
+                        Ht(wt.Z, {
                           auto: !1,
                           preview: !1,
                           disableFilter: !0,
@@ -1460,7 +1470,7 @@
                     }),
                   ),
                 ),
-                Wt(
+                Ht(
                   g.Z,
                   {
                     color: w,
@@ -1472,7 +1482,7 @@
                   null === O || void 0 === O ? void 0 : O.workName,
                 ),
                 S.length > 1 &&
-                  Wt(
+                  Ht(
                     T.Z,
                     {
                       sx: {
@@ -1483,7 +1493,7 @@
                       },
                     },
                     U.prev &&
-                      Wt(R.Z, {
+                      Ht(M.Z, {
                         width: '24px',
                         height: '24px',
                         sx: {
@@ -1499,7 +1509,7 @@
                           return null === n || void 0 === n ? void 0 : n.current.slick.slickPrev()
                         },
                       }),
-                    Wt(
+                    Ht(
                       f.Z,
                       {
                         height: ['48px', '48px', '60px'],
@@ -1507,7 +1517,7 @@
                         sx: { transform: 'translateX('.concat(K, 'px)') },
                       },
                       S.map(function (t, e) {
-                        return Wt(
+                        return Ht(
                           T.Z,
                           {
                             flex: 'none',
@@ -1520,7 +1530,7 @@
                               null === n || void 0 === n || n.current.slick.slickGoTo(e)
                             },
                           },
-                          Wt(wt.Z, {
+                          Ht(wt.Z, {
                             disableFilter: !0,
                             disableBorder: !0,
                             withZipped: !0,
@@ -1532,7 +1542,7 @@
                       }),
                     ),
                     U.next &&
-                      Wt(R.Z, {
+                      Ht(M.Z, {
                         width: '24px',
                         height: '24px',
                         src: ''.concat(b.Xs, '/image/julia/nft/naraka/caret.svg'),
@@ -1544,7 +1554,7 @@
                   ),
               ),
               t.buttonText &&
-                Wt(
+                Ht(
                   gt.Z,
                   {
                     width: '160px',
@@ -1556,7 +1566,7 @@
                       textOverflow: 'ellipsis',
                     },
                   },
-                  Wt(
+                  Ht(
                     h.Z,
                     {
                       href: it(O.buttonLink, null === O || void 0 === O ? void 0 : O.linkType),
@@ -1574,9 +1584,9 @@
         )
       }
       var Bt = ['eventNumber', 'eventConfigJsonString'],
-        Gt = u().createElement,
-        Mt = {
-          Header1: G,
+        Rt = u().createElement,
+        Gt = {
+          Header1: R,
           Header2: K,
           Header3: J,
           Artist1: et,
@@ -1656,7 +1666,7 @@
                       defaultValue: null === t || void 0 === t ? void 0 : t.buttonText,
                     }),
                   ),
-                  ht(R.Z, {
+                  ht(M.Z, {
                     src: ''.concat(b.Xs, '/image/julia/nft/topgoal/btn-bg.png'),
                     sx: { position: 'absolute', right: '0', top: '0', bottom: 0, width: '98px' },
                   }),
@@ -1668,7 +1678,7 @@
             return bt(
               T.Z,
               { sx: { position: 'relative' } },
-              bt(R.Z, { src: null === t || void 0 === t ? void 0 : t.bgImage, width: '100%' }),
+              bt(M.Z, { src: null === t || void 0 === t ? void 0 : t.bgImage, width: '100%' }),
               bt(h.Z, {
                 href: (0, Z.I)(t.buttonLink),
                 target: '_blank',
@@ -1827,12 +1837,12 @@
               V = N[1],
               D = (0, c.useState)(320),
               A = D[0],
-              H = D[1],
-              W = (0, c.useState)(0),
-              j = W[0],
-              B = W[1],
-              G = (0, c.createRef)(null),
-              R = (0, c.useCallback)(
+              W = D[1],
+              H = (0, c.useState)(0),
+              j = H[0],
+              B = H[1],
+              R = (0, c.createRef)(null),
+              M = (0, c.useCallback)(
                 function () {
                   w(s.slice(0, v ? 3 * C : s.length))
                 },
@@ -1860,14 +1870,14 @@
               (0, c.useEffect)(
                 function () {
                   var t,
-                    e = null === G || void 0 === G || null === (t = G.current) || void 0 === t ? void 0 : t.offsetWidth
-                  e && H(e)
+                    e = null === R || void 0 === R || null === (t = R.current) || void 0 === t ? void 0 : t.offsetWidth
+                  e && W(e)
                 },
-                [G],
+                [R],
               ),
               (0, c.useEffect)(
                 function () {
-                  R()
+                  M()
                 },
                 [C],
               ),
@@ -1921,7 +1931,7 @@
                       return Tt(
                         f.Z,
                         {
-                          ref: G,
+                          ref: R,
                           key: a,
                           flexDirection: 'column',
                           onClick: function () {
@@ -1933,10 +1943,10 @@
                           bg: x,
                           sx:
                             ((c = { position: 'relative', borderRadius: [4, 4, 8] }),
-                            (0, M.Z)(c, 'borderRadius', '8px'),
-                            (0, M.Z)(c, 'overflow', 'hidden'),
-                            (0, M.Z)(c, 'cursor', 'pointer'),
-                            (0, M.Z)(c, '&:hover', {
+                            (0, G.Z)(c, 'borderRadius', '8px'),
+                            (0, G.Z)(c, 'overflow', 'hidden'),
+                            (0, G.Z)(c, 'cursor', 'pointer'),
+                            (0, G.Z)(c, '&:hover', {
                               boxShadow:
                                 '0px 16px 32px rgba(0, 0, 0, 0.16), 0px 8px 16px rgba(0, 0, 0, 0.16), inset 0px 0px 2px rgba(94, 102, 115, 0.9)',
                             }),
@@ -1974,8 +1984,7 @@
                             }),
                           ),
                         ),
-                        e.title &&
-                          e.description &&
+                        (e.title || e.description) &&
                           Tt(
                             f.Z,
                             { flexDirection: 'column', flex: 1, p: [16, 16, 24] },
@@ -2114,10 +2123,10 @@
             )
           },
           Works1: Vt,
-          Works2: Ht,
+          Works2: Wt,
           Works3: jt,
         }
-      function Rt() {
+      function Mt() {
         var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
           e = (0, m.ZK)(),
           o = t.eventNumber,
@@ -2148,20 +2157,20 @@
               o = t.pathname
             T(''.concat(e).concat(o))
           }, []),
-          Gt(
+          Rt(
             d.X,
             null,
-            Gt(
+            Rt(
               p.q,
               null,
-              Gt(
+              Rt(
                 'title',
                 null,
                 e('eventName-'.concat(o), { defaultValue: g.eventName }),
                 '|',
                 e('seo-title', { defaultValue: 'Binance NFT' }),
               ),
-              Gt('meta', {
+              Rt('meta', {
                 name: 'keywords',
                 content: ''
                   .concat(e('eventName-'.concat(o), { defaultValue: g.eventName }), ', ')
@@ -2172,32 +2181,32 @@
                     }),
                   ),
               }),
-              Gt('meta', {
+              Rt('meta', {
                 name: 'description',
                 content: e('eventDescription-'.concat(o), {
                   defaultValue: (null === g || void 0 === g ? void 0 : g.eventDescription) || '',
                 }),
               }),
-              Gt('meta', {
+              Rt('meta', {
                 property: 'og:description',
                 content: e('eventDescription-'.concat(o), {
                   defaultValue: (null === g || void 0 === g ? void 0 : g.eventDescription) || '',
                 }),
               }),
-              Gt('meta', { property: 'og:title', content: e('eventName-'.concat(o), { defaultValue: g.eventName }) }),
-              Gt('meta', { property: 'og:image', content: g.eventImage }),
-              Gt('link', { href: C, rel: 'canonical' }),
+              Rt('meta', { property: 'og:title', content: e('eventName-'.concat(o), { defaultValue: g.eventName }) }),
+              Rt('meta', { property: 'og:image', content: g.eventImage }),
+              Rt('link', { href: C, rel: 'canonical' }),
             ),
-            !v && 2 != g.status && Gt(y, { status: g.status }),
+            !v && 2 != g.status && Rt(y, { status: g.status }),
             (v || 2 == g.status) &&
               w.map(function (t, e) {
                 var n, i, r
-                return Gt(
+                return Rt(
                   'div',
                   { key: e },
-                  Mt[null === t || void 0 === t || null === (n = t.admin) || void 0 === n ? void 0 : n.name] &&
+                  Gt[null === t || void 0 === t || null === (n = t.admin) || void 0 === n ? void 0 : n.name] &&
                     u().createElement(
-                      Mt[null === t || void 0 === t ? void 0 : t.admin.name],
+                      Gt[null === t || void 0 === t ? void 0 : t.admin.name],
                       (0, l.Z)(
                         (0, l.Z)({}, t.render),
                         {},
@@ -2216,7 +2225,7 @@
           )
         )
       }
-      Rt.getInitialProps = (function () {
+      Mt.getInitialProps = (function () {
         var t = (0, r.Z)(
           i().mark(function t(e) {
             var o, n, r, l, a, c, u, p, d
@@ -2255,7 +2264,7 @@
           return t.apply(this, arguments)
         }
       })()
-      const Ut = Rt
+      const Ut = Mt
     },
   },
 ])
