@@ -31334,7 +31334,7 @@
     },
     Snc0: (e, t, n) => {
       'use strict'
-      n.d(t, { Z: () => x })
+      n.d(t, { Z: () => w })
       var r = n('GpFh'),
         i = n('xIFI'),
         o = n.n(i),
@@ -31367,14 +31367,15 @@
           : o().createElement(u.Z, (0, s.__assign)({ ref: t, tx: 'breadcrumb', variant: 'container' }, h), v)
       })
       var h = n('l4n0'),
-        m = ['children', 'active', 'link'],
-        v = ['links'],
-        g = o().createElement,
-        y = o().memo(function (e) {
+        m = n('2sIW'),
+        v = ['children', 'active', 'link'],
+        g = ['links'],
+        y = o().createElement,
+        b = o().memo(function (e) {
           var t = e.children,
             n = e.active,
-            i = (e.link, (0, r.Z)(e, m))
-          return g(
+            i = (e.link, (0, r.Z)(e, v))
+          return y(
             a.Z,
             Object.assign(
               {
@@ -31388,26 +31389,26 @@
             t,
           )
         })
-      function b(e) {
+      function x(e) {
         var t = e.links,
-          n = (0, r.Z)(e, v),
+          n = (0, r.Z)(e, g),
           i = (0, h.useRouter)(),
           o = t.map(function (e, n) {
-            return g(
-              y,
+            return y(
+              b,
               {
                 key: n,
                 onClick: function () {
-                  return n !== t.length - 1 && i.push(e.link)
+                  return n !== t.length - 1 && i.push((0, m.KQ)(e.link))
                 },
                 active: n === t.length - 1,
               },
               e.value,
             )
           })
-        return g(p, Object.assign({ height: ['28px', '48px'], links: o }, n))
+        return y(p, Object.assign({ height: ['28px', '48px'], links: o }, n))
       }
-      const x = o().memo(b)
+      const w = o().memo(x)
     },
     uvjO: (e, t, n) => {
       'use strict'
@@ -32577,7 +32578,7 @@
                     .concat(de === _.T9.OPENED_BOX, '&isProduct=1')
                 : '/'.concat(z, '/nft/goods/detail?productId=').concat(ue, '&isProduct=1')
               'MYSTERY_BOX' === ce && ue && (e = '/'.concat(z, '/nft/mystery-box/detail?productId=').concat(ue)),
-                n ? ke(e) : B.push(e)
+                n ? ke(e) : B.push((0, w.KQ)(e))
             },
             [de, ce, ue],
           ),
@@ -32591,10 +32592,12 @@
                   !u &&
                   1 === de &&
                   B.push(
-                    '/'
-                      .concat(z, '/nft/shopWindow/')
-                      .concat((0, w.WF)(xe), '?uid=')
-                      .concat(be, '&isBack=1'),
+                    (0, w.KQ)(
+                      '/'
+                        .concat(z, '/nft/shopWindow/')
+                        .concat((0, w.WF)(xe), '?uid=')
+                        .concat(be, '&isBack=1'),
+                    ),
                   )
             },
             [be, ye, u, de],
@@ -36857,7 +36860,7 @@
                       width: ['48%', '48%', '20%'],
                       minWidth: 150,
                       onClick: function () {
-                        window.location.href = ''.concat(location.origin, '/').concat(o, '/')
+                        window.location.href = (0, w.KQ)(''.concat(location.origin, '/').concat(o, '/'))
                       },
                     },
                     e('nft-risk-cancel-btn', { defaultValue: 'Cancel' }),
@@ -37007,16 +37010,16 @@
             y = (0, d.useRouter)(),
             b = (0, l.useSelector)(N.blockSelector),
             x = (0, d.useParams)().lng,
-            w = (0, c.GS)().isMobile
+            _ = (0, c.GS)().isMobile
           return (
             (0, u.Z)(function () {
               m.block.queryBlockData().catch(function (e) {
-                y.push('/'.concat(x, '/nft/500'))
+                y.push((0, w.KQ)('/'.concat(x, '/nft/500')))
               })
             }),
             (0, i.useEffect)(
               function () {
-                b && U.test(v.pathname) && y.push('/'.concat(x, '/nft/lawBlock'))
+                b && U.test(v.pathname) && y.push((0, w.KQ)('/'.concat(x, '/nft/lawBlock')))
               },
               [b],
             ),
@@ -37028,7 +37031,7 @@
               s.Sq,
               z(f.q, null, z('title', null, 'Binance NFT')),
               z(d.Head, null, z('meta', { name: 'keywords', content: 'Binance NFT' })),
-              o && !w && z(O.Z, { links: o, sx: p }),
+              o && !_ && z(O.Z, { links: o, sx: p }),
               n,
               z(F, null),
             )
@@ -37046,7 +37049,7 @@
         c = n('Z0vu'),
         u = n('KwAY'),
         l = n('k8Wo'),
-        d = n('z8ih'),
+        d = n('7r1Z'),
         f = n('cp0a'),
         p = i().createElement,
         h = function (e) {
@@ -37358,7 +37361,7 @@
                       : '/'
                           .concat(E, '/nft/goods/detail?productId=')
                           .concat(null === t || void 0 === t ? void 0 : t.productId, '&isProduct=1')
-                    n ? O(e) : T.push(e)
+                    n ? O(e) : T.push((0, w.KQ)(e))
                   },
                 },
                 S(d.Z, {
@@ -38612,7 +38615,7 @@
               label: n('list-text', { defaultValue: 'List NFT' }),
               type: [b.ec.READY],
               onClick: function () {
-                t.push('/'.concat(N, '/nft/goods/sale/').concat(T))
+                t.push((0, E.KQ)('/'.concat(N, '/nft/goods/sale/').concat(T)))
               },
             },
             { label: n('delist-delisted', { defaultValue: 'Delisted' }), type: [b.eM.OFFSALE], disabled: !0 },
@@ -38721,7 +38724,7 @@
                         ml: z ? 0 : ['12px', '16px', '24px'],
                         onClick: function () {
                           ne.withdraw.updateAnyState({ selectedId: [T], networkType: U }),
-                            t.push('/'.concat(N, '/nft/withdraw?type=nft'))
+                            t.push((0, E.KQ)('/'.concat(N, '/nft/withdraw?type=nft')))
                         },
                       },
                       k(d.Z, { color: '#D0980B' }, n('asset-withdraw-enter', { defaultValue: 'Withdraw' })),
@@ -38932,7 +38935,7 @@
                   width: '152px',
                   height: '48px',
                   onClick: function () {
-                    null === t || void 0 === t || t(), i.push('/'.concat(r, '/nft/user/setting?tab=Limit'))
+                    null === t || void 0 === t || t(), i.push((0, N.KQ)('/'.concat(r, '/nft/user/setting?tab=Limit')))
                   },
                 },
                 n('2fa-raise-limit', { defaultValue: ' Raise Limit' }),
@@ -39037,7 +39040,7 @@
                 ),
                 Y(p.Z, {
                   as: 'a',
-                  href: o,
+                  href: (0, N.KQ)(o),
                   fontWeight: '500',
                   cursor: 'pointer',
                   color: 't.yellow',
@@ -39225,7 +39228,7 @@
             })(),
             me = function () {
               var e = C ? 'boxes' : 'nft'
-              le && clearTimeout(le), O(), M.push('/'.concat(n, '/nft/balance?tab=').concat(e))
+              le && clearTimeout(le), O(), M.push((0, N.KQ)('/'.concat(n, '/nft/balance?tab=').concat(e)))
             },
             ve = function () {
               le && clearTimeout(le), O(), D && window.location.reload()
@@ -39581,7 +39584,7 @@
               isNaN(e.target.value) || te(e.target.value), se(!b.Po.test(e.target.value))
             },
             Ie = function () {
-              xe && clearTimeout(xe), n(), D.push('/'.concat(i, '/nft/history'))
+              xe && clearTimeout(xe), n(), D.push((0, N.KQ)('/'.concat(i, '/nft/history')))
             }
           return (
             (0, c.useEffect)(
@@ -39889,7 +39892,7 @@
     },
     UEOE: (e, t, n) => {
       'use strict'
-      n.d(t, { Z: () => h })
+      n.d(t, { Z: () => m })
       var r = n('xIFI'),
         i = n.n(r),
         o = n('5o2h'),
@@ -39899,12 +39902,13 @@
         u = n('Z0vu'),
         l = n('uQy2'),
         d = n('Tr4L'),
-        f = i().createElement
-      function p() {
+        f = n('2sIW'),
+        p = i().createElement
+      function h() {
         var e = (0, d.$)(),
           t = e.t,
           n = e.i18n.language
-        return f(
+        return p(
           o.Z,
           {
             height: ['672px', '540px', '800px'],
@@ -39920,24 +39924,24 @@
               backgroundSize: 'cover',
             },
           },
-          f(a.Z, {
+          p(a.Z, {
             mb: ['54px', '24px', '35px'],
             src: ''.concat(l.Xs, '/image/julia/nft/naraka/logo.svg'),
             width: ['250px', '303px', '392px'],
           }),
-          f(
+          p(
             s.Z,
             { fontWeight: 500, textAlign: 'center', fontSize: [20, 20, 32], mb: ['16px', '16px', '24px'] },
             t('nft-naraka-slogan', { defaultValue: 'Unchained Combats and Unlimited Possibilities' }),
           ),
-          f(s.Z, { fontSize: [16, 16, 20] }, '2021-07-19 12:00 PM (UTC)'),
-          f(
+          p(s.Z, { fontSize: [16, 16, 20] }, '2021-07-19 12:00 PM (UTC)'),
+          p(
             c.Z,
             {
-              href: '/'.concat(n, '/nft/mystery-box/detail?productId=111021882576294912'),
+              href: (0, f.KQ)('/'.concat(n, '/nft/mystery-box/detail?productId=111021882576294912')),
               sx: { display: 'flex', justifyContent: 'center', width: '100%' },
             },
-            f(
+            p(
               u.Z,
               { mt: ['16px', '16px', '36px'], fontSize: [16, 20], width: ['80%', '260px', '282px'], height: '52px' },
               t('nft-naraka-buy-pack', { defaultValue: 'Buy pack' }),
@@ -39945,7 +39949,7 @@
           ),
         )
       }
-      const h = i().memo(p)
+      const m = i().memo(h)
     },
     'BU/0': (e, t, n) => {
       'use strict'
@@ -40754,7 +40758,7 @@
       'use strict'
       var r = n('xIFI'),
         i = n.n(r)
-      n('l4n0'), n('uQy2'), n('k8Wo'), n('5qCs'), i().createElement
+      n('l4n0'), n('uQy2'), n('k8Wo'), n('2sIW'), n('5qCs'), i().createElement
     },
     N3ys: (e, t, n) => {
       'use strict'
@@ -40856,7 +40860,7 @@
     },
     '+Rj9': (e, t, n) => {
       'use strict'
-      n.d(t, { Z: () => y })
+      n.d(t, { Z: () => b })
       var r = n('xIFI'),
         i = n.n(r),
         o = n('0fu7'),
@@ -40867,11 +40871,12 @@
         l = n('l4n0'),
         d = n('uQy2'),
         f = n('k8Wo'),
-        p = i().createElement
-      const h = function (e) {
+        p = n('2sIW'),
+        h = i().createElement
+      const m = function (e) {
         var t = e.isEnd,
           n = (0, f.ZK)()
-        return p(
+        return h(
           c.Z,
           {
             alignItems: 'center',
@@ -40887,7 +40892,7 @@
             },
           },
           t &&
-            p(
+            h(
               o.Z,
               {
                 minWidth: '169px',
@@ -40903,14 +40908,14 @@
             ),
         )
       }
-      var m = n('NZY4'),
-        v = i().createElement,
-        g = function (e) {
+      var v = n('NZY4'),
+        g = i().createElement,
+        y = function (e) {
           var t = e.data,
             n = void 0 === t ? {} : t,
             r = (0, l.useRouter)(),
             d = (0, f.ZK)()
-          return v(
+          return g(
             o.Z,
             {
               width: [343, 324, 384],
@@ -40921,15 +40926,15 @@
                 '&:nth-of-type(even)': { marginRight: 0 },
               },
             },
-            v(
+            g(
               o.Z,
               { sx: { position: 'relative' }, mb: '22px' },
-              (n.isComing || n.isEnd) && v(h, { isComing: n.isComing, isEnd: n.isEnd }),
-              v(a.Z, { src: n.cover, width: [343, 324, 384], height: [343, 324, 384], sx: { borderRadius: '12px' } }),
+              (n.isComing || n.isEnd) && g(m, { isComing: n.isComing, isEnd: n.isEnd }),
+              g(a.Z, { src: n.cover, width: [343, 324, 384], height: [343, 324, 384], sx: { borderRadius: '12px' } }),
             ),
-            v(s.Z, { fontSize: ['24px', '24px', '32px'], fontWeight: '500', mb: '16px', color: '#F0B90B' }, n.name),
-            v(s.Z, { minHeight: ['20px', '40px', '40px'], mb: ['24px'], variant: 'body2', color: '#B7BDC6' }, n.intro),
-            v(
+            g(s.Z, { fontSize: ['24px', '24px', '32px'], fontWeight: '500', mb: '16px', color: '#F0B90B' }, n.name),
+            g(s.Z, { minHeight: ['20px', '40px', '40px'], mb: ['24px'], variant: 'body2', color: '#B7BDC6' }, n.intro),
+            g(
               c.Z,
               {
                 variant: 'headline3',
@@ -40940,9 +40945,9 @@
                 fontSize: '24px',
                 fontWeight: '500',
               },
-              n.amount ? v(i().Fragment, null, v(m.Z, { size: 24, mr: '4px', currency: 'busd' }), n.amount) : '?',
+              n.amount ? g(i().Fragment, null, g(v.Z, { size: 24, mr: '4px', currency: 'busd' }), n.amount) : '?',
             ),
-            v(
+            g(
               u.Z,
               {
                 width: '160px',
@@ -40951,7 +40956,7 @@
                   n.isComing || n.isEnd
                     ? void 0
                     : function () {
-                        r.push(n.link)
+                        r.push((0, p.KQ)(n.link))
                       },
                 inactive: n.isComing || n.isEnd,
               },
@@ -40963,7 +40968,7 @@
             ),
           )
         }
-      const y = function () {
+      const b = function () {
         var e = (0, f.ZK)(),
           t = (0, l.useParams)().lng,
           n = [
@@ -41011,13 +41016,13 @@
               link: '',
             },
           ]
-        return v(
+        return g(
           o.Z,
           {
             width: '100%',
             sx: { minHeight: '100vh', backgroundColor: '#0b122e', backgroundSize: '100%', backgroundPosition: 'top' },
           },
-          v(
+          g(
             o.Z,
             {
               sx: {
@@ -41028,7 +41033,7 @@
                 backgroundSize: 'cover',
               },
             },
-            v(
+            g(
               o.Z,
               {
                 sx: {
@@ -41041,7 +41046,7 @@
                   background: 'linear-gradient(180deg, rgba(11, 18, 46, 0) 0%, #0B122E 100%)',
                 },
               },
-              v(
+              g(
                 o.Z,
                 {
                   sx: {
@@ -41050,12 +41055,12 @@
                     padding: ['48px 16px 0', '80px 48px 0 ', '154px 120px 0'],
                   },
                 },
-                v(
+                g(
                   s.Z,
                   { fontSize: ['24px', '32px', '32px'], fontWeight: '500', color: '#EAECEF', mb: '16px' },
                   'en' === t ? 'Big Time Packs' : e('bigtime-pass-4-title', { defaultValue: 'Big Time Packs' }),
                 ),
-                v(
+                g(
                   s.Z,
                   { variant: 'body2', color: '#B7BDC6' },
                   e('bigtime-pass-4-name', {
@@ -41066,14 +41071,14 @@
               ),
             ),
           ),
-          v(
+          g(
             o.Z,
             { sx: { maxWidth: '1440px', margin: '0 auto' } },
-            v(
+            g(
               c.Z,
               { justifyContent: 'flex-start', padding: ['0 16px', '0 48px', '0 188px'], sx: { flexWrap: 'wrap' } },
               n.map(function (e) {
-                return v(g, { key: e.key, data: e })
+                return g(y, { key: e.key, data: e })
               }),
             ),
           ),
@@ -41084,11 +41089,11 @@
       'use strict'
       var r = n('xIFI'),
         i = n.n(r)
-      n('l4n0'), n('uQy2'), n('k8Wo'), i().createElement
+      n('l4n0'), n('uQy2'), n('k8Wo'), n('2sIW'), i().createElement
     },
     '01Mt': (e, t, n) => {
       'use strict'
-      n.d(t, { Z: () => x })
+      n.d(t, { Z: () => w })
       var r = n('GpFh'),
         i = n('xIFI'),
         o = n.n(i),
@@ -41101,18 +41106,19 @@
         f = n('E06v'),
         p = n('l4n0'),
         h = n('k8Wo'),
-        m = n('uQy2'),
-        v = n('NZY4'),
-        g = ['data', 'lng'],
-        y = o().createElement,
-        b = function (e) {
+        m = n('2sIW'),
+        v = n('uQy2'),
+        g = n('NZY4'),
+        y = ['data', 'lng'],
+        b = o().createElement,
+        x = function (e) {
           var t = e.data,
             n = void 0 === t ? {} : t,
             i = e.lng,
-            o = (0, r.Z)(e, g),
+            o = (0, r.Z)(e, y),
             d = (0, p.useRouter)(),
             f = (0, h.ZK)()
-          return y(
+          return b(
             a.Z,
             Object.assign(
               {
@@ -41123,10 +41129,10 @@
               },
               o,
             ),
-            y(s.Z, { width: '150px', height: '280px', mb: '24px', sx: { objectFit: 'fill' }, src: n.cover }),
-            y(c.Z, { variant: 'headline3', fontSize: ['24px', '24px', '32px'], color: '#F0B90B', mb: '12px' }, n.name),
-            y(c.Z, { variant: 'body2', color: '#B7BDC6' }, n.intro),
-            y(
+            b(s.Z, { width: '150px', height: '280px', mb: '24px', sx: { objectFit: 'fill' }, src: n.cover }),
+            b(c.Z, { variant: 'headline3', fontSize: ['24px', '24px', '32px'], color: '#F0B90B', mb: '12px' }, n.name),
+            b(c.Z, { variant: 'body2', color: '#B7BDC6' }, n.intro),
+            b(
               u.Z,
               {
                 mt: '12px',
@@ -41136,12 +41142,12 @@
                 color: '#B7BDC6',
                 variant: 'headline5',
               },
-              y(c.Z, { variant: 'headline5', color: '#B7BDC6', mr: '4px' }, n.quantity),
+              b(c.Z, { variant: 'headline5', color: '#B7BDC6', mr: '4px' }, n.quantity),
               'en' === i
                 ? 'currently available'
                 : f('binance-tgoal-rare-intoal', { defaultValue: 'currently available' }),
             ),
-            y(
+            b(
               u.Z,
               {
                 mt: '16px',
@@ -41153,24 +41159,24 @@
                 alignItems: 'center',
                 fontWeight: '500',
               },
-              y(v.Z, { size: 24, mr: '4px', currency: 'busd' }),
+              b(g.Z, { size: 24, mr: '4px', currency: 'busd' }),
               n.amount,
               ' BUSD',
             ),
-            y(
+            b(
               l.Z,
               {
                 width: '160px',
                 height: '40px',
                 onClick: function () {
-                  d.push(n.link)
+                  d.push((0, m.KQ)(n.link))
                 },
               },
               f('bigtime-buy', { defaultValue: 'Buy' }),
             ),
           )
         }
-      const x = function () {
+      const w = function () {
         var e = (0, h.ZK)(),
           t = (0, p.useParams)().lng,
           n = (0, h.GS)().isMobile,
@@ -41179,29 +41185,29 @@
           s = r[1],
           c = 0,
           l = (0, i.useRef)(null),
-          v = (0, i.useRef)(!1),
+          m = (0, i.useRef)(!1),
           g = function () {
             s(function (e) {
               return e < k.length - 1 ? e + 1 : 0
             })
           },
-          x = function () {
+          y = function () {
             s(function (e) {
               return e > 0 ? e - 1 : k.length - 1
             })
           },
           w = function (e) {
-            e.preventDefault(), (c = e.changedTouches[0].clientX), (v.current = !0)
+            e.preventDefault(), (c = e.changedTouches[0].clientX), (m.current = !0)
           },
           _ = function (e) {
             setTimeout(function () {
               e.preventDefault()
               var t = e.changedTouches[0].clientX - c
-              t > 60 ? x() : t < -60 && g(), (c = 0), (v.current = !1)
+              t > 60 ? y() : t < -60 && g(), (c = 0), (m.current = !1)
             }, 30)
           },
           E = function (e) {
-            e.preventDefault(), v.current
+            e.preventDefault(), m.current
           }
         ;(0, i.useEffect)(
           function () {
@@ -41222,7 +41228,7 @@
         var k = [
           {
             key: 'gold',
-            cover: ''.concat(m.Xs, '/image/julia/nft/bigtime/vip-gold.png'),
+            cover: ''.concat(v.Xs, '/image/julia/nft/bigtime/vip-gold.png'),
             name: e('bigtime-pass-1-item1-name', { defaultValue: 'Gold VIP Pass' }),
             intro: e('bigtime-pass-1-item1-intro', {
               defaultValue: 'Gold VIP passes will give earliest access to the first 1,000 players.',
@@ -41233,7 +41239,7 @@
           },
           {
             key: 'silver',
-            cover: ''.concat(m.Xs, '/image/julia/nft/bigtime/vip-silver.png'),
+            cover: ''.concat(v.Xs, '/image/julia/nft/bigtime/vip-silver.png'),
             name: e('bigtime-pass-1-item2-name', { defaultValue: 'Silver VIP Pass' }),
             intro:
               'en' === t
@@ -41247,7 +41253,7 @@
           },
           {
             key: 'jade',
-            cover: ''.concat(m.Xs, '/image/julia/nft/bigtime/vip-jade.png'),
+            cover: ''.concat(v.Xs, '/image/julia/nft/bigtime/vip-jade.png'),
             name: e('bigtime-pass-1-item3-name', { defaultValue: 'Jade VIP Pass' }),
             intro: e('bigtime-pass-1-item3-intro', {
               defaultValue: 'Jade VIP passes will unlock access to the next 8,000 players after the Silver tier.',
@@ -41257,7 +41263,7 @@
             link: '/'.concat(t, '/nft/marketplace?category=-1&keyword=Jade%20VIP%20Access%20Pass'),
           },
         ]
-        return y(
+        return b(
           a.Z,
           {
             width: '100%',
@@ -41265,42 +41271,42 @@
             sx: { scrollbarWidth: 'none', '&::-webkit-scrollbar': { display: 'none' } },
           },
           n
-            ? y(
+            ? b(
                 u.Z,
                 { alignItems: 'center', justifyContent: 'between' },
-                y(
+                b(
                   a.Z,
-                  { width: '40px', height: '40px', padding: '6px', onClick: x },
-                  y(
+                  { width: '40px', height: '40px', padding: '6px', onClick: y },
+                  b(
                     a.Z,
                     {
                       width: '24px',
                       height: '24px',
                       sx: { borderRadius: '50%', lineHeight: '24px', textAlign: 'center', background: '#EAECEF' },
                     },
-                    y(d.Z, { color: 't.third' }),
+                    b(d.Z, { color: 't.third' }),
                   ),
                 ),
-                y(a.Z, { ref: l }, y(b, { data: k[o] })),
-                y(
+                b(a.Z, { ref: l }, b(x, { data: k[o] })),
+                b(
                   a.Z,
                   { width: '40px', height: '40px', padding: '6px', onClick: g },
-                  y(
+                  b(
                     a.Z,
                     {
                       width: '24px',
                       height: '24px',
                       sx: { borderRadius: '50%', lineHeight: '24px', textAlign: 'center', background: '#EAECEF' },
                     },
-                    y(f.Z, { color: 't.third' }),
+                    b(f.Z, { color: 't.third' }),
                   ),
                 ),
               )
-            : y(
+            : b(
                 u.Z,
                 { width: 'fit-content', justifyContent: 'space-between' },
                 k.map(function (e) {
-                  return y(b, { key: e.key, data: e, lng: t })
+                  return b(x, { key: e.key, data: e, lng: t })
                 }),
               ),
         )
@@ -41308,7 +41314,7 @@
     },
     F3Iy: (e, t, n) => {
       'use strict'
-      n.d(t, { Z: () => y })
+      n.d(t, { Z: () => b })
       var r = n('5vwO'),
         i = n('uL7+'),
         o = n('xIFI'),
@@ -41320,48 +41326,8 @@
         d = n('k8Wo'),
         f = n('uQy2'),
         p = n('l4n0'),
-        h = a().createElement
-      function m(e) {
-        var t = e.url,
-          n = e.title,
-          r = e.tips,
-          i = e.isLast,
-          o = e.btnContent,
-          a = e.auctionUrl
-        return h(
-          s.Z,
-          { justifyContent: 'center', marginBottom: i ? '0' : '80px' },
-          h(c.Z, { src: t, width: '486px', height: '486px', sx: { flexShrink: 0 } }),
-          h(
-            s.Z,
-            { marginLeft: '98px', sx: { flexShrink: 1, maxWidth: '666px' }, flexDirection: 'column' },
-            h(u.Z, { variant: 'headline3', color: '#ff0', fontWeight: '600' }, n),
-            h(u.Z, { variant: 'body1', sx: { margin: '24px 0 56px', color: '#B7BDC6' } }, r),
-            h(
-              l.Z,
-              {
-                sx: {
-                  width: 'fit-content',
-                  height: '44px',
-                  borderRadius: '0',
-                  padding: '12px 32px',
-                  position: 'relative',
-                },
-                onClick: function () {
-                  return (window.location.href = a)
-                },
-                color: '#181A20',
-                variant: 'primary',
-              },
-              h(u.Z, { color: '#181A20', sx: { position: 'relative', zIndex: 9 } }, o),
-              h(c.Z, {
-                src: ''.concat(f.Xs, '/image/julia/nft/topgoal/btn-bg.png'),
-                sx: { position: 'absolute', right: '0', top: '0', bottom: 0, width: '98px' },
-              }),
-            ),
-          ),
-        )
-      }
+        h = n('2sIW'),
+        m = a().createElement
       function v(e) {
         var t = e.url,
           n = e.title,
@@ -41369,16 +41335,16 @@
           i = e.isLast,
           o = e.btnContent,
           a = e.auctionUrl
-        return h(
+        return m(
           s.Z,
-          { justifyContent: 'center', marginBottom: i ? '0' : '120px' },
-          h(c.Z, { src: t, width: '336px', height: '336px', sx: { flexShrink: 0 } }),
-          h(
+          { justifyContent: 'center', marginBottom: i ? '0' : '80px' },
+          m(c.Z, { src: t, width: '486px', height: '486px', sx: { flexShrink: 0 } }),
+          m(
             s.Z,
-            { marginLeft: '16px', sx: { flex: '1 1 auto', paddingRight: '48px' }, flexDirection: 'column' },
-            h(u.Z, { variant: 'headline3', color: '#fff', fontWeight: '600' }, n),
-            h(u.Z, { variant: 'body1', sx: { margin: '24px 0 40px', color: '#B7BDC6' } }, r),
-            h(
+            { marginLeft: '98px', sx: { flexShrink: 1, maxWidth: '666px' }, flexDirection: 'column' },
+            m(u.Z, { variant: 'headline3', color: '#ff0', fontWeight: '600' }, n),
+            m(u.Z, { variant: 'body1', sx: { margin: '24px 0 56px', color: '#B7BDC6' } }, r),
+            m(
               l.Z,
               {
                 sx: {
@@ -41389,13 +41355,13 @@
                   position: 'relative',
                 },
                 onClick: function () {
-                  return (window.location.href = a)
+                  return (window.location.href = (0, h.KQ)(a))
                 },
                 color: '#181A20',
                 variant: 'primary',
               },
-              h(u.Z, { color: '#181A20', sx: { position: 'relative', zIndex: 9 } }, o),
-              h(c.Z, {
+              m(u.Z, { color: '#181A20', sx: { position: 'relative', zIndex: 9 } }, o),
+              m(c.Z, {
                 src: ''.concat(f.Xs, '/image/julia/nft/topgoal/btn-bg.png'),
                 sx: { position: 'absolute', right: '0', top: '0', bottom: 0, width: '98px' },
               }),
@@ -41410,31 +41376,72 @@
           i = e.isLast,
           o = e.btnContent,
           a = e.auctionUrl
-        return h(
+        return m(
+          s.Z,
+          { justifyContent: 'center', marginBottom: i ? '0' : '120px' },
+          m(c.Z, { src: t, width: '336px', height: '336px', sx: { flexShrink: 0 } }),
+          m(
+            s.Z,
+            { marginLeft: '16px', sx: { flex: '1 1 auto', paddingRight: '48px' }, flexDirection: 'column' },
+            m(u.Z, { variant: 'headline3', color: '#fff', fontWeight: '600' }, n),
+            m(u.Z, { variant: 'body1', sx: { margin: '24px 0 40px', color: '#B7BDC6' } }, r),
+            m(
+              l.Z,
+              {
+                sx: {
+                  width: 'fit-content',
+                  height: '44px',
+                  borderRadius: '0',
+                  padding: '12px 32px',
+                  position: 'relative',
+                },
+                onClick: function () {
+                  return (window.location.href = (0, h.KQ)(a))
+                },
+                color: '#181A20',
+                variant: 'primary',
+              },
+              m(u.Z, { color: '#181A20', sx: { position: 'relative', zIndex: 9 } }, o),
+              m(c.Z, {
+                src: ''.concat(f.Xs, '/image/julia/nft/topgoal/btn-bg.png'),
+                sx: { position: 'absolute', right: '0', top: '0', bottom: 0, width: '98px' },
+              }),
+            ),
+          ),
+        )
+      }
+      function y(e) {
+        var t = e.url,
+          n = e.title,
+          r = e.tips,
+          i = e.isLast,
+          o = e.btnContent,
+          a = e.auctionUrl
+        return m(
           s.Z,
           { justifyContent: 'center', alignItems: 'center', marginBottom: i ? '0' : '96px', flexDirection: 'column' },
-          h(c.Z, { width: '100%', src: t }),
-          h(u.Z, { variant: 'headline5', color: '#fff', marginTop: '32px', fontWeight: '600' }, n),
-          h(u.Z, { variant: 'body2', sx: { margin: '24px 0 56px', color: '#B7BDC6' } }, r),
-          h(
+          m(c.Z, { width: '100%', src: t }),
+          m(u.Z, { variant: 'headline5', color: '#fff', marginTop: '32px', fontWeight: '600' }, n),
+          m(u.Z, { variant: 'body2', sx: { margin: '24px 0 56px', color: '#B7BDC6' } }, r),
+          m(
             l.Z,
             {
               sx: { width: '100%', height: '44px', borderRadius: '0', padding: '12px 32px', position: 'relative' },
               onClick: function () {
-                return (window.location.href = a)
+                return (window.location.href = (0, h.KQ)(a))
               },
               color: '#181A20',
               variant: 'primary',
             },
-            h(u.Z, { color: '#181A20', sx: { position: 'relative', zIndex: 9 } }, o),
-            h(c.Z, {
+            m(u.Z, { color: '#181A20', sx: { position: 'relative', zIndex: 9 } }, o),
+            m(c.Z, {
               src: ''.concat(f.Xs, '/image/julia/nft/topgoal/btn-bg.png'),
               sx: { position: 'absolute', right: '0', top: '0', bottom: 0, width: '98px' },
             }),
           ),
         )
       }
-      function y(e) {
+      function b(e) {
         ;(0, i.Z)(e)
         var t = (0, d.ZK)(),
           n = (0, d.GS)(),
@@ -41463,28 +41470,28 @@
                 auctionUrl: ''.concat(f.H, '/').concat(a, '/nft/goods/detail?productId=3387731&isProduct=1'),
               }
             return n.isDesktop
-              ? h(
+              ? m(
                   s.Z,
                   { flexDirection: 'column', overflowX: 'hidden', maxWidth: '1200px', paddingBottom: '120px' },
-                  m(e),
-                  m(i),
-                  m((0, r.Z)((0, r.Z)({}, o), {}, { isLast: !0 })),
-                )
-              : n.isTablet
-              ? h(
-                  s.Z,
-                  { flexDirection: 'column', paddingBottom: '120px' },
                   v(e),
                   v(i),
                   v((0, r.Z)((0, r.Z)({}, o), {}, { isLast: !0 })),
                 )
-              : n.isMobile
-              ? h(
+              : n.isTablet
+              ? m(
                   s.Z,
-                  { flexDirection: 'column', sx: { padding: '0 24px 80px' } },
+                  { flexDirection: 'column', paddingBottom: '120px' },
                   g(e),
                   g(i),
                   g((0, r.Z)((0, r.Z)({}, o), {}, { isLast: !0 })),
+                )
+              : n.isMobile
+              ? m(
+                  s.Z,
+                  { flexDirection: 'column', sx: { padding: '0 24px 80px' } },
+                  y(e),
+                  y(i),
+                  y((0, r.Z)((0, r.Z)({}, o), {}, { isLast: !0 })),
                 )
               : null
           },
@@ -41672,7 +41679,7 @@
     },
     cDH1: (e, t, n) => {
       'use strict'
-      n.d(t, { Z: () => m })
+      n.d(t, { Z: () => v })
       var r = n('uL7+'),
         i = n('xIFI'),
         o = n.n(i),
@@ -41684,16 +41691,17 @@
         d = n('k8Wo'),
         f = n('uQy2'),
         p = n('l4n0'),
-        h = o().createElement
-      function m(e) {
+        h = n('2sIW'),
+        m = o().createElement
+      function v(e) {
         ;(0, r.Z)(e)
         var t = (0, d.ZK)(),
           n = t('binance-tgoal-buy-mystery'),
           o = (0, p.useParams)().lng
-        return h(
+        return m(
           i.Fragment,
           null,
-          h(
+          m(
             a.Z,
             {
               height: ['260px', '399px', '399px'],
@@ -41708,7 +41716,7 @@
                 backgroundSize: 'cover',
               },
             },
-            h(
+            m(
               s.Z,
               {
                 sx: { position: 'relative', zIndex: 9, color: '#fff', textAlign: 'center' },
@@ -41718,25 +41726,25 @@
                 fontWeight: '600',
                 width: ['327px', '540px', '100%'],
               },
-              h(l.c, {
+              m(l.c, {
                 t: t,
                 i18nKey: 'binance-tgoal-open-mystery1',
-                components: { Yellow: h(s.Z, { sx: { display: 'inline-block', color: 'rgb(235, 172, 14)' } }) },
+                components: { Yellow: m(s.Z, { sx: { display: 'inline-block', color: 'rgb(235, 172, 14)' } }) },
               }),
             ),
-            h(
+            m(
               c.Z,
               {
                 sx: { position: 'relative', zIndex: 9, height: '44px', borderRadius: '0', padding: '12px 16px' },
                 onClick: function () {
-                  return (window.location.href = ''
-                    .concat(f.H, '/')
-                    .concat(o, '/nft/mystery-box/detail?productId=109505707094601728'))
+                  return (window.location.href = (0, h.KQ)(
+                    ''.concat(f.H, '/').concat(o, '/nft/mystery-box/detail?productId=109505707094601728'),
+                  ))
                 },
                 variant: 'primary',
               },
-              h(s.Z, { color: '#181A20', sx: { position: 'relative', zIndex: 9 } }, n),
-              h(u.Z, {
+              m(s.Z, { color: '#181A20', sx: { position: 'relative', zIndex: 9 } }, n),
+              m(u.Z, {
                 src: ''.concat(f.Xs, '/image/julia/nft/topgoal/btn-bg.png'),
                 sx: { position: 'absolute', right: '0', top: '0', bottom: 0, width: '98px' },
               }),
@@ -42912,53 +42920,68 @@
         ],
         a = ['first', 'second', 'third']
     },
-    z8ih: (e, t, n) => {
+    '7r1Z': (e, t, n) => {
       'use strict'
-      n.d(t, { Z: () => h })
+      n.d(t, { Z: () => v })
       var r = n('xIFI'),
         i = n.n(r),
-        o = n('2VvH'),
-        a = n('ne11'),
-        s = n('5o2h'),
-        c = n('0fu7'),
-        u = n('briU'),
-        l = n('00SY'),
-        d = n('k8Wo'),
-        f = i().createElement
-      function p(e) {
+        o = n('D57K'),
+        a = n('xThO')
+      const s = function (e) {
+        return i().createElement(
+          a.Z,
+          (0, o.__assign)({ width: '1em', height: '1em', viewBox: '0 0 24 24', fill: 'none' }, e),
+          i().createElement('path', { fill: 'currentColor', d: 'M4 11h16v2H4z' }),
+        )
+      }
+      const c = function (e) {
+        return i().createElement(
+          a.Z,
+          (0, o.__assign)({ width: '1em', height: '1em', viewBox: '0 0 24 24', fill: 'none' }, e),
+          i().createElement('path', { d: 'M4 11h16v2H4v-2z', fill: 'currentColor' }),
+          i().createElement('path', { d: 'M13 4v16h-2V4h2z', fill: 'currentColor' }),
+        )
+      }
+      var u = n('5o2h'),
+        l = n('0fu7'),
+        d = n('briU'),
+        f = n('00SY'),
+        p = n('k8Wo'),
+        h = i().createElement
+      function m(e) {
         var t = e.max,
           n = e.width,
           i = void 0 === n ? '32px' : n,
-          p = e.updateNum,
-          h = e.currentNum,
+          o = e.updateNum,
+          a = e.currentNum,
           m = e.hiddenMax,
           v = e.noLine,
           g = e.vertical,
           y = void 0 !== g && g,
-          b = (0, d.ZK)(),
-          x = (0, r.useState)(h),
+          b = (0, p.ZK)(),
+          x = (0, r.useState)(a),
           w = x[0],
           _ = x[1]
         ;(0, r.useEffect)(
           function () {
-            _(h)
+            _(a)
           },
-          [h],
+          [a],
         )
-        return f(
-          s.Z,
+        return h(
+          u.Z,
           { alignItems: 'center', flexDirection: y ? 'column' : 'row' },
-          f(
-            c.Z,
+          h(
+            l.Z,
             null,
-            f(
-              s.Z,
+            h(
+              u.Z,
               { alignItems: 'center', fontWeight: 100 },
-              f(
-                c.Z,
+              h(
+                l.Z,
                 {
                   onClick: function () {
-                    w >= 1 && (_(w - 1), null === p || void 0 === p || p(w - 1))
+                    w >= 1 && (_(w - 1), null === o || void 0 === o || o(w - 1))
                   },
                   style: {
                     width: i,
@@ -42970,9 +42993,9 @@
                     textAlign: 'center',
                   },
                 },
-                f(o.Z, { size: '12px' }),
+                h(s, { size: '12px' }),
               ),
-              f(l.Z, {
+              h(f.Z, {
                 value: w,
                 boxProps: { height: 'auto', sx: { border: 'none' } },
                 sx: {
@@ -42986,14 +43009,14 @@
                 },
                 onChange: function (e) {
                   var n = e.target.value.replace(/[^\d]/g, '')
-                  n <= t && (_(n), null === p || void 0 === p || p(n))
+                  n <= t && (_(n), null === o || void 0 === o || o(n))
                 },
               }),
-              f(
-                c.Z,
+              h(
+                l.Z,
                 {
                   onClick: function () {
-                    w < t && (_(w + 1), null === p || void 0 === p || p(w + 1))
+                    w < t && (_(w + 1), null === o || void 0 === o || o(w + 1))
                   },
                   style: {
                     width: i,
@@ -43005,30 +43028,30 @@
                     textAlign: 'center',
                   },
                 },
-                f(a.Z, { size: '12px', color: w >= t && 't.disabled' }),
+                h(c, { size: '12px', color: w >= t && 't.disabled' }),
               ),
             ),
-            !v && f(c.Z, { width: '100%', height: '1px', bg: '#eaecef' }),
+            !v && h(l.Z, { width: '100%', height: '1px', bg: '#eaecef' }),
           ),
           !m &&
-            f(
-              s.Z,
+            h(
+              u.Z,
               { mt: y && '13px', ml: !y && '32px' },
-              f(
-                u.Z,
+              h(
+                d.Z,
                 {
                   color: 't.yellow',
                   variant: 'link',
                   sx: { textDecoration: 'underline', cursor: 'pointer' },
                   mr: '8px',
                   onClick: function () {
-                    w !== t && (_(t), null === p || void 0 === p || p(t))
+                    w !== t && (_(t), null === o || void 0 === o || o(t))
                   },
                 },
                 b('blindbox-max', { defaultValue: 'Max' }),
               ),
-              f(
-                u.Z,
+              h(
+                d.Z,
                 { variant: 'body2', color: 't.third' },
                 '(',
                 b('blindbox-available', { defaultValue: 'Available' }),
@@ -43039,7 +43062,7 @@
             ),
         )
       }
-      const h = (0, r.memo)(p)
+      const v = (0, r.memo)(m)
     },
     DWZ9: (e, t, n) => {
       'use strict'
@@ -43991,7 +44014,12 @@
                 { key: e.title },
                 w(
                   s.Z,
-                  { as: 'a', sx: { textDecoration: 'none' }, href: e.href, onClick: e.onClick ? e.onClick : k },
+                  {
+                    as: 'a',
+                    sx: { textDecoration: 'none' },
+                    href: (0, y.KQ)(e.href),
+                    onClick: e.onClick ? e.onClick : k,
+                  },
                   w(
                     a.Z,
                     { alignItems: 'center' },
@@ -44249,7 +44277,7 @@
     },
     yIP0: (e, t, n) => {
       'use strict'
-      n.d(t, { Z: () => E })
+      n.d(t, { Z: () => k })
       var r = n('5vwO'),
         i = n('xIFI'),
         o = n.n(i),
@@ -44366,28 +44394,29 @@
         g = n('j/s1'),
         y = n('k8Wo'),
         b = n('RTir'),
-        x = o().createElement,
-        w = (0, g.ZP)(a.Z).withConfig({ displayName: 'FAQS__TextA', componentId: 'sc-1s8xksm-0' })([
+        x = n('2sIW'),
+        w = o().createElement,
+        _ = (0, g.ZP)(a.Z).withConfig({ displayName: 'FAQS__TextA', componentId: 'sc-1s8xksm-0' })([
           'a{color:#c99400;}',
         ]),
-        _ = function (e) {
+        E = function (e) {
           var t = e.list,
             n = void 0 === t ? [] : t,
             l = e.viewmore,
             d = void 0 === l ? '/support/list/a-guide-to-Binance-NFT' : l,
             g = (0, y.GS)().isDesktop,
-            _ = (0, i.useState)({}),
-            E = _[0],
-            k = _[1],
-            S = (0, y.ZK)(),
-            C = (0, i.useContext)(b._R).lng
-          return x(
+            E = (0, i.useState)({}),
+            k = E[0],
+            S = E[1],
+            C = (0, y.ZK)(),
+            T = (0, i.useContext)(b._R).lng
+          return w(
             o().Fragment,
             null,
-            x(
+            w(
               s.Z,
               { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
-              x(
+              w(
                 a.Z,
                 {
                   variant: 'headline3',
@@ -44396,21 +44425,21 @@
                   fontWeight: [500, 600, 600],
                   color: 't.primary',
                 },
-                S('asset-deposit-faq', { defaultValue: 'FAQ' }),
+                C('asset-deposit-faq', { defaultValue: 'FAQ' }),
               ),
               g &&
-                x(
+                w(
                   c.Z,
-                  { href: '/'.concat(C + d), target: '_blank' },
-                  x(
+                  { href: (0, x.KQ)('/'.concat(T + d)), target: '_blank' },
+                  w(
                     s.Z,
                     { flexDirection: 'row', alignItems: 'center' },
-                    x(
+                    w(
                       a.Z,
                       { fontSize: '20px', lineHeight: '28px', color: '#181A20' },
-                      S('asset-deposit-viewmore', { defaultValue: 'View More' }),
+                      C('asset-deposit-viewmore', { defaultValue: 'View More' }),
                     ),
-                    x(v.Z, {
+                    w(v.Z, {
                       size: 32,
                       color: 't.primary',
                       ml: '4px',
@@ -44419,67 +44448,67 @@
                   ),
                 ),
             ),
-            x(
+            w(
               u.Z,
               null,
               n.map(function (e, t) {
-                return x(
+                return w(
                   u.Z,
                   { mt: '48px', key: t },
-                  x(
+                  w(
                     s.Z,
                     {
                       flexDirection: 'row',
                       alignItems: ['flex-start', 'center', 'center'],
                       onClick: function () {
                         return (function (e, t) {
-                          ;(E[e] = t), k((0, r.Z)({}, E))
-                        })(t, !E[t])
+                          ;(k[e] = t), S((0, r.Z)({}, k))
+                        })(t, !k[t])
                       },
                     },
-                    x(f, { size: 24, mr: '12px', minWidth: '24px' }),
-                    x(a.Z, {
+                    w(f, { size: 24, mr: '12px', minWidth: '24px' }),
+                    w(a.Z, {
                       variant: 'headline6',
                       fontSize: ['16px', '20px', '20px'],
                       lineHeight: ['24px', '28px', '28px'],
                       color: 't.primary',
                       style: { flex: 1, wordBreak: 'break-word', wordWrap: 'break-word' },
                       dangerouslySetInnerHTML: {
-                        __html: S(null === e || void 0 === e ? void 0 : e.q, {
+                        __html: C(null === e || void 0 === e ? void 0 : e.q, {
                           defaultValue: null === e || void 0 === e ? void 0 : e.q_d,
                         }),
                       },
                     }),
-                    E[t]
-                      ? x(p, {
+                    k[t]
+                      ? w(p, {
                           size: 16,
                           ml: '12px',
                           my: ['4px', 0, 0],
                           style: { minWidth: '16px', cursor: 'pointer' },
                         })
-                      : x(h, {
+                      : w(h, {
                           size: 16,
                           ml: '12px',
                           my: ['4px', 0, 0],
                           style: { minWidth: '16px', cursor: 'pointer' },
                         }),
                   ),
-                  E[t] &&
-                    x(
+                  k[t] &&
+                    w(
                       s.Z,
                       { mt: '28px' },
-                      x(m, { size: 24, mr: '12px', minWidth: '24px' }),
-                      x(w, {
+                      w(m, { size: 24, mr: '12px', minWidth: '24px' }),
+                      w(_, {
                         variant: 'body1',
                         fontSize: ['14px', '16px', '16px'],
                         lineHeight: ['20px', '24px', '24px'],
                         color: 't.primary',
                         style: { flex: 1, wordBreak: 'break-word', wordWrap: 'break-word' },
                         dangerouslySetInnerHTML: {
-                          __html: S(null === e || void 0 === e ? void 0 : e.a, {
+                          __html: C(null === e || void 0 === e ? void 0 : e.a, {
                             defaultValue: null === e || void 0 === e ? void 0 : e.a_d,
-                            link: null === e || void 0 === e ? void 0 : e.link,
-                            link1: null === e || void 0 === e ? void 0 : e.link1,
+                            link: (0, x.KQ)(null === e || void 0 === e ? void 0 : e.link),
+                            link1: (0, x.KQ)(null === e || void 0 === e ? void 0 : e.link1),
                           }),
                         },
                       }),
@@ -44489,7 +44518,7 @@
             ),
           )
         }
-      const E = o().memo(_)
+      const k = o().memo(E)
     },
     xSn1: (e, t, n) => {
       'use strict'
@@ -44589,7 +44618,7 @@
                               border: y && e.connector === g ? '2px solid #F0B90B' : 'none',
                             },
                             as: c ? '' : 'a',
-                            href: e.link,
+                            href: (0, D.KQ)(e.link),
                             target: '_blank',
                             onClick: (0, a.Z)(
                               o().mark(function t() {
@@ -44692,7 +44721,7 @@
                               mt: ['8px', '12px', '12px'],
                               as: e.helpLink ? 'a' : '',
                               target: '_blank',
-                              href: e.helpLink && e.helpLink.replace(/\{\{lng\}\}/g, E),
+                              href: (0, D.KQ)(e.helpLink && e.helpLink.replace(/\{\{lng\}\}/g, E)),
                             },
                             w(e.helpText, { defaultValue: e.defaultHelpText }),
                           ),
@@ -52680,6 +52709,21 @@
         )
       }
     },
+    UhQO: (e, t, n) => {
+      'use strict'
+      n.d(t, { Z: () => s })
+      var r = n('D57K'),
+        i = n('xIFI'),
+        o = n.n(i),
+        a = n('xThO')
+      const s = function (e) {
+        return o().createElement(
+          a.Z,
+          (0, r.__assign)({ width: '1em', height: '1em', viewBox: '0 0 16 16', fill: 'none' }, e),
+          o().createElement('path', { d: 'M8.825 8L3.95 12.95 5 14l6-6-6-6-1.05 1.05L8.825 8z', fill: 'currentColor' }),
+        )
+      }
+    },
     X9US: (e, t, n) => {
       'use strict'
       n.d(t, { Z: () => s })
@@ -53034,6 +53078,24 @@
           (0, r.__assign)({ width: '1em', height: '1em', viewBox: '0 0 24 24', fill: 'none' }, e),
           o().createElement('path', {
             d: 'M17 3V1h-2v2H9.01V1h-2v2H3v18h18V3h-4zm2 16H5v-8h14v8zm0-10H5V5h2.01v2h2V5H15v2h2V5h2v4z',
+            fill: 'currentColor',
+          }),
+        )
+      }
+    },
+    Khpo: (e, t, n) => {
+      'use strict'
+      n.d(t, { Z: () => s })
+      var r = n('D57K'),
+        i = n('xIFI'),
+        o = n.n(i),
+        a = n('xThO')
+      const s = function (e) {
+        return o().createElement(
+          a.Z,
+          (0, r.__assign)({ width: '1em', height: '1em', viewBox: '0 0 24 24', fill: 'none' }, e),
+          o().createElement('path', {
+            d: 'M19.003 6.42l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59 5.59-5.59z',
             fill: 'currentColor',
           }),
         )

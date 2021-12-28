@@ -3,7 +3,7 @@
   {
     '99bB': (t, e, o) => {
       'use strict'
-      o.r(e), o.d(e, { default: () => Ut })
+      o.r(e), o.d(e, { default: () => Mt })
       var n = o('ODTw'),
         i = o.n(n),
         r = o('q7Ka'),
@@ -15,19 +15,20 @@
         d = o('cvq5'),
         x = o('l4n0'),
         s = o('HmmH'),
-        v = o('WmPT'),
-        m = o('k8Wo'),
-        f = o('5o2h'),
-        g = o('briU'),
-        h = o('UWeV'),
-        b = o('uQy2'),
-        w = o('X9US'),
-        Z = o('CasK'),
-        k = u().createElement
-      function C(t) {
+        v = o('2sIW'),
+        m = o('WmPT'),
+        f = o('k8Wo'),
+        g = o('5o2h'),
+        h = o('briU'),
+        b = o('UWeV'),
+        w = o('uQy2'),
+        Z = o('X9US'),
+        k = o('CasK'),
+        C = u().createElement
+      function y(t) {
         var e = t.status
-        return k(
-          f.Z,
+        return C(
+          g.Z,
           {
             flexDirection: 'column',
             alignItems: 'center',
@@ -35,34 +36,33 @@
             sx: {
               position: 'relative',
               overflow: 'hidden',
-              backgroundImage: 'url('.concat(b.Xs, '/image/julia/nft/events/event-status.jpg)'),
+              backgroundImage: 'url('.concat(w.Xs, '/image/julia/nft/events/event-status.jpg)'),
               backgroundSize: 'cover',
               height: '100vh',
             },
           },
-          k(
-            g.Z,
+          C(
+            h.Z,
             { variant: 'Headline2', color: '#fff', sx: { fontSize: ['24px', '32px', '40px'], fontWeight: 'bold' } },
             0 == e || 1 == e ? 'Event Unstarted' : 3 == e ? 'Event Ended' : 'Event Unstarted',
           ),
-          k(
-            h.Z,
-            { href: (0, Z.I)('https://www.binance.com/en/nft/home') },
-            k(
-              f.Z,
+          C(
+            b.Z,
+            { href: (0, v.KQ)((0, k.I)('https://www.binance.com/en/nft/home')) },
+            C(
+              g.Z,
               { justifyContent: 'center', alignItems: 'center', sx: { position: 'absolute', bottom: '60px' } },
-              k(w.Z, { color: '#fff', size: 16, mr: 12 }),
-              k(g.Z, { fontSize: '16px', color: '#fff' }, 'Back'),
+              C(Z.Z, { color: '#fff', size: 16, mr: 12 }),
+              C(h.Z, { fontSize: '16px', color: '#fff' }, 'Back'),
             ),
           ),
         )
       }
-      const y = u().memo(C)
-      var T = o('0fu7'),
-        I = o('50kH'),
-        S = o('lxJv'),
-        E = o('j/s1'),
-        z = o('2sIW'),
+      const T = u().memo(y)
+      var I = o('0fu7'),
+        S = o('50kH'),
+        E = o('lxJv'),
+        z = o('j/s1'),
         N = {
           dark: { bgColor: '#0B122E', mainColor: '#EAECEF', subColor: '#B7BDC6' },
           light: { bgColor: '#FFFFFF', mainColor: '#1E2329', subColor: '#474D57' },
@@ -82,14 +82,14 @@
           },
         },
         A = u().createElement,
-        W = (0, E.F4)(['from{transform:translateY(0px);}50%{transform:translateY(8px);}0{transform:translateY(0px);}']),
-        H = (0, E.iv)(['', ' 1.5s ease-in-out 0.5s infinite'], W),
-        j = (0, E.ZP)(f.Z).withConfig({ displayName: 'Header1__CircleAnimationBox', componentId: 'ptpp64-0' })(
+        W = (0, z.F4)(['from{transform:translateY(0px);}50%{transform:translateY(8px);}0{transform:translateY(0px);}']),
+        H = (0, z.iv)(['', ' 1.5s ease-in-out 0.5s infinite'], W),
+        j = (0, z.ZP)(g.Z).withConfig({ displayName: 'Header1__CircleAnimationBox', componentId: 'ptpp64-0' })(
           ['animation:', ';'],
           H,
         )
       function B(t) {
-        var e = (0, m.ZK)(),
+        var e = (0, f.ZK)(),
           o = t.comopnentType,
           n = t.comopnentName,
           i = t.index,
@@ -127,7 +127,7 @@
             [t],
           )
         return A(
-          T.Z,
+          I.Z,
           {
             width: '100%',
             height: '100vh',
@@ -139,11 +139,11 @@
             },
           },
           A(
-            T.Z,
+            I.Z,
             { width: '100%', px: ['16px', 0, 0], sx: { position: 'absolute', bottom: 0 } },
             a &&
               A(
-                T.Z,
+                I.Z,
                 {
                   width: ['auto', '640px', '640px'],
                   px: '24px',
@@ -159,7 +159,7 @@
                 },
                 (null === t || void 0 === t ? void 0 : t.mainTitleText) &&
                   A(
-                    g.Z,
+                    h.Z,
                     {
                       as: 'h1',
                       variant: 'headline4',
@@ -174,7 +174,7 @@
                   ),
                 (null === t || void 0 === t ? void 0 : t.subtitle) &&
                   A(
-                    g.Z,
+                    h.Z,
                     {
                       variant: 'headline5',
                       fontWeight: [500, 600, 600],
@@ -188,7 +188,7 @@
                   ),
                 (null === t || void 0 === t ? void 0 : t.activityTime) &&
                   A(
-                    f.Z,
+                    g.Z,
                     {
                       width: ['214px', 'auto', 'auto'],
                       alignItems: 'cneter',
@@ -196,9 +196,9 @@
                       mt: ['8px', '24px', '24px'],
                       mx: 'auto',
                     },
-                    A(I.Z, { color: 't.white', size: 24, mr: '8px' }),
+                    A(S.Z, { color: 't.white', size: 24, mr: '8px' }),
                     A(
-                      g.Z,
+                      h.Z,
                       {
                         variant: 'body2',
                         fontSize: ['12px', '14px', '14px'],
@@ -231,24 +231,24 @@
                 requestAnimationFrame(l)
               },
             },
-            A(S.Z, { color: 't.primary', size: 12 }),
+            A(E.Z, { color: 't.primary', size: 12 }),
           ),
         )
       }
-      const R = u().memo(B)
-      var G = o('GDnE'),
-        M = o('3733'),
-        U = u().createElement
-      function O(t) {
+      const K = u().memo(B)
+      var R = o('GDnE'),
+        G = o('3733'),
+        M = u().createElement
+      function U(t) {
         var e,
-          o = (0, m.ZK)(),
+          o = (0, f.ZK)(),
           n = t.comopnentType,
           i = t.comopnentName,
           r = t.index,
           l = t.eventNumber,
           a = ['287px', '100%', '100%']
-        return U(
-          f.Z,
+        return M(
+          g.Z,
           {
             height: ['672px', '540px', '800px'],
             width: '100%',
@@ -265,8 +265,8 @@
           },
           'textFont' === t.mainTitle &&
             (null === t || void 0 === t ? void 0 : t.mainTitleText) &&
-            U(
-              g.Z,
+            M(
+              h.Z,
               {
                 as: 'h1',
                 fontSize: ['24px', '36px', '48px'],
@@ -280,39 +280,39 @@
             ),
           'artFont' == t.mainTitle &&
             (null === t || void 0 === t ? void 0 : t.mainTitleImage) &&
-            U(M.Z, {
+            M(G.Z, {
               mb: ['24px', '24px', '35px'],
-              src: ''.concat((0, z.U1)(null === t || void 0 === t ? void 0 : t.mainTitleImage)),
+              src: ''.concat((0, v.U1)(null === t || void 0 === t ? void 0 : t.mainTitleImage)),
               width: ['287px', '370px', '392px'],
             }),
           (null === t || void 0 === t ? void 0 : t.subtitle) &&
-            U(
-              g.Z,
+            M(
+              h.Z,
               ((e = { fontWeight: 500, textAlign: 'center', fontSize: [16, 20, 32], width: a }),
-              (0, G.Z)(e, 'textAlign', 'center'),
-              (0, G.Z)(e, 'mb', ['24px', '24px', '24px']),
+              (0, R.Z)(e, 'textAlign', 'center'),
+              (0, R.Z)(e, 'mb', ['24px', '24px', '24px']),
               e),
               o(''.concat(n, '-').concat(i, '-').concat(r, '-subtitle-').concat(l), {
                 defaultValue: null === t || void 0 === t ? void 0 : t.subtitle,
               }),
             ),
-          U(
-            g.Z,
+          M(
+            h.Z,
             { fontSize: [16, 16, 20], width: a, textAlign: 'center' },
             null === t || void 0 === t ? void 0 : t.activityTime,
           ),
         )
       }
-      const K = u().memo(O)
+      const O = u().memo(U)
       var _ = u().createElement
       function L(t) {
-        var e = (0, m.ZK)(),
+        var e = (0, f.ZK)(),
           o = t.comopnentType,
           n = t.comopnentName,
           i = t.index,
           r = t.eventNumber
         return _(
-          f.Z,
+          g.Z,
           {
             justifyContent: 'center',
             alignItems: ['flex-end', 'center', 'center'],
@@ -324,12 +324,12 @@
               color: '#eee',
             },
           },
-          _(f.Z, { sx: { height: '100%', flex: '1 1 auto', background: '#0B0E11', opacity: 0.4 } }),
+          _(g.Z, { sx: { height: '100%', flex: '1 1 auto', background: '#0B0E11', opacity: 0.4 } }),
           _(
-            f.Z,
+            g.Z,
             { sx: { width: '1200px', height: ['auto', '100%', '100%'] } },
             _(
-              f.Z,
+              g.Z,
               {
                 flexDirection: 'column',
                 justifyContent: 'center',
@@ -341,7 +341,7 @@
               'textFont' === t.mainTitle &&
                 (null === t || void 0 === t ? void 0 : t.mainTitleText) &&
                 _(
-                  g.Z,
+                  h.Z,
                   {
                     as: 'h1',
                     fontSize: ['24px', '32px', '40px'],
@@ -355,26 +355,26 @@
                 ),
               'artFont' == t.mainTitle &&
                 (null === t || void 0 === t ? void 0 : t.mainTitleImage) &&
-                _(M.Z, {
-                  src: (0, z.U1)(null === t || void 0 === t ? void 0 : t.mainTitleImage),
+                _(G.Z, {
+                  src: (0, v.U1)(null === t || void 0 === t ? void 0 : t.mainTitleImage),
                   width: ['266px', '207px', ' 326px'],
                   sx: { position: 'relative', zIndex: 9 },
                 }),
               (null === t || void 0 === t ? void 0 : t.activityTime) &&
                 _(
-                  g.Z,
+                  h.Z,
                   { sx: { position: 'relative', zIndex: 9 }, fontSize: '14px', color: '#F0B90B', mt: '24px' },
                   null === t || void 0 === t ? void 0 : t.activityTime,
                 ),
               (null === t || void 0 === t ? void 0 : t.description) &&
                 _(
-                  g.Z,
+                  h.Z,
                   { mt: '24px', sx: { position: 'relative', zIndex: 9 }, variant: 'body1', color: '#EAECEF' },
                   e(''.concat(o, '-').concat(n, '-').concat(i, '-description-').concat(r), {
                     defaultValue: null === t || void 0 === t ? void 0 : t.description,
                   }),
                 ),
-              _(f.Z, {
+              _(g.Z, {
                 flexDirection: 'column',
                 sx: {
                   position: 'absolute',
@@ -389,24 +389,24 @@
               }),
             ),
           ),
-          _(f.Z, { sx: { flex: '1 1 auto' } }),
+          _(g.Z, { sx: { flex: '1 1 auto' } }),
         )
       }
       const J = u().memo(L)
-      var X = o('kdgh'),
-        q = o('DNSJ'),
-        Y = o('Tr4L'),
-        P = u().createElement
-      function $(t) {
+      var Q = o('kdgh'),
+        X = o('DNSJ'),
+        q = o('Tr4L'),
+        Y = u().createElement
+      function P(t) {
         var e = t.children,
           o = t.bgColor,
           n = t.mainColor,
           i = t.bgImage,
           r = t.title,
           l = t.height
-        ;(0, Y.$)().t
-        return P(
-          T.Z,
+        ;(0, q.$)().t
+        return Y(
+          I.Z,
           {
             sx: {
               position: 'relative',
@@ -416,8 +416,8 @@
               backgroundSize: 'cover',
             },
           },
-          P(
-            T.Z,
+          Y(
+            I.Z,
             {
               height: l || 'auto',
               py: ['24px', '36px', '64px'],
@@ -425,8 +425,8 @@
               sx: { maxWidth: '1248px', margin: '0 auto', boxSizing: 'border-box' },
             },
             r &&
-              P(
-                g.Z,
+              Y(
+                h.Z,
                 {
                   as: 'h2',
                   variant: 'Headline2',
@@ -440,11 +440,11 @@
           ),
         )
       }
-      const Q = u().memo($)
+      const $ = u().memo(P)
       var tt = u().createElement
       const et = function (t) {
         var e,
-          o = (0, m.ZK)(),
+          o = (0, f.ZK)(),
           n = t.comopnentType,
           i = t.comopnentName,
           r = t.index,
@@ -457,7 +457,7 @@
           x = p.mainColor,
           s = p.subColor
         return tt(
-          Q,
+          $,
           {
             bgColor: d,
             mainColor: x,
@@ -465,7 +465,7 @@
             title: a ? o(''.concat(n, '-').concat(i, '-').concat(r, '-title-').concat(l), { defaultValue: a }) : '',
           },
           tt(
-            X.Z,
+            Q.Z,
             {
               columns: [1, 2, 2],
               sx: {
@@ -477,22 +477,22 @@
             },
             c.map(function (t, e) {
               return tt(
-                f.Z,
+                g.Z,
                 { key: t.avatar },
                 tt(
-                  T.Z,
+                  I.Z,
                   { width: [60, 80, 128], height: [60, 80, 128], mr: ['24px'] },
-                  tt(q.Z, {
+                  tt(X.Z, {
                     withZipped: !0,
                     src: t.avatar,
                     sx: { borderRadius: '50%', width: '100%', height: '100%', objectFit: 'cover' },
                   }),
                 ),
                 tt(
-                  T.Z,
+                  I.Z,
                   { sx: { flex: 1, overflow: 'hidden' } },
                   tt(
-                    g.Z,
+                    h.Z,
                     {
                       variant: 'Headline5',
                       color: x,
@@ -502,7 +502,7 @@
                     t.name,
                   ),
                   tt(
-                    g.Z,
+                    h.Z,
                     { color: s, sx: { fontSize: ['12px', '12px', '14px'], textAlign: 'justify' } },
                     o(''.concat(n, '-').concat(i, '-').concat(r, '-').concat(e, '-text-').concat(l), {
                       defaultValue: null === t || void 0 === t ? void 0 : t.text,
@@ -560,12 +560,12 @@
               n = window.location.href,
               i = n.match(/(.+?)nft/) ? n.match(/(.+?)nft/)[1] : '',
               r = t.match(/nft\/(\S*)/) ? t.match(/nft\/(\S*)/)[1] : ''
-            ;(o = 'outterLink' !== e && r ? ''.concat(i, 'nft/').concat(r) : t), window.open(o)
+            ;(o = 'outterLink' !== e && r ? ''.concat(i, 'nft/').concat(r) : t), window.open((0, v.KQ)(o))
           }
         },
         lt = u().createElement
       const at = function (t) {
-        var e = (0, m.ZK)(),
+        var e = (0, f.ZK)(),
           o = t.comopnentType,
           n = t.comopnentName,
           i = t.index,
@@ -593,7 +593,7 @@
           d = u.mainColor,
           x = u.subColor
         return lt(
-          Q,
+          $,
           {
             bgColor: p,
             mainColor: d,
@@ -602,7 +602,7 @@
             title: l ? e(''.concat(o, '-').concat(n, '-').concat(i, '-title-').concat(r), { defaultValue: l }) : '',
           },
           lt(
-            X.Z,
+            Q.Z,
             {
               columns: 1,
               sx: {
@@ -614,22 +614,22 @@
             },
             a.map(function (t, l) {
               return lt(
-                f.Z,
+                g.Z,
                 { flexDirection: ['column', 'row', 'row'], alignItems: ['center', 'flex-start'] },
                 lt(
-                  T.Z,
+                  I.Z,
                   { width: [343, 282, 282], height: [343, 282, 282], mr: [0, '48px', '80px'], mb: ['16px', 0] },
-                  lt(q.Z, {
+                  lt(X.Z, {
                     withZipped: !0,
                     src: null === t || void 0 === t ? void 0 : t.avatar,
                     sx: { borderRadius: ['4px', '8px', '8px'], width: '100%', height: '100%', objectFit: 'cover' },
                   }),
                 ),
                 lt(
-                  T.Z,
+                  I.Z,
                   { sx: { width: ['100%', '734px'], flex: 1, overflow: 'hidden' } },
                   lt(
-                    g.Z,
+                    h.Z,
                     {
                       color: d,
                       mb: ['16px', '24px'],
@@ -639,7 +639,7 @@
                     null === t || void 0 === t ? void 0 : t.name,
                   ),
                   lt(
-                    g.Z,
+                    h.Z,
                     { lineHeight: '24px', color: x, maxWidth: '734px', fontSize: ['14px', '16px', '16px'] },
                     e(''.concat(o, '-').concat(n, '-').concat(i, '-').concat(l, '-text-').concat(r), {
                       defaultValue: null === t || void 0 === t ? void 0 : t.text,
@@ -660,7 +660,7 @@
           r = t.title,
           l = t.height
         return ct(
-          T.Z,
+          I.Z,
           {
             sx: {
               position: 'relative',
@@ -670,9 +670,9 @@
               height: l,
             },
           },
-          i && ct(q.Z, { src: i, width: '100%', maxWidth: '100%', height: l }),
+          i && ct(X.Z, { src: i, width: '100%', maxWidth: '100%', height: l }),
           ct(
-            T.Z,
+            I.Z,
             {
               py: ['24px', '36px', '64px'],
               px: ['16px', '48px', '24px'],
@@ -689,7 +689,7 @@
             },
             r &&
               ct(
-                g.Z,
+                h.Z,
                 {
                   as: 'h2',
                   variant: 'Headline2',
@@ -706,8 +706,8 @@
       const pt = u().memo(ut)
       var dt = u().createElement
       function xt(t) {
-        var e = (0, m.ZK)(),
-          o = (0, m.GS)(),
+        var e = (0, f.ZK)(),
+          o = (0, f.GS)(),
           n = o.isMobile,
           i = o.isDesktop,
           r = t.comopnentType,
@@ -726,7 +726,7 @@
             height: !n && null !== t && void 0 !== t && t.bgImage ? 'auto' : '800px',
           },
           dt(
-            f.Z,
+            g.Z,
             {
               flexDirection: ['column', 'column', 'row'],
               alignItems: 'center',
@@ -736,10 +736,10 @@
               sx: { overflowY: i ? 'inherit' : 'scroll' },
             },
             dt(
-              T.Z,
+              I.Z,
               { color: d, sx: { opacity: 0.8 }, maxWidth: '520px' },
               dt(
-                g.Z,
+                h.Z,
                 {
                   as: 'h2',
                   fontSize: [24, 32],
@@ -752,7 +752,7 @@
                 }),
               ),
               dt(
-                g.Z,
+                h.Z,
                 { fontSize: [14, 16], lineHeight: '24px', sx: { textAlign: 'justify', 'white-space': 'pre-wrap' } },
                 e(''.concat(r, '-').concat(l, '-').concat(a, '-description-').concat(c), {
                   defaultValue: null === t || void 0 === t ? void 0 : t.description,
@@ -765,7 +765,7 @@
       const st = u().memo(xt)
       var vt = u().createElement
       function mt(t) {
-        var e = (0, m.ZK)(),
+        var e = (0, f.ZK)(),
           o = t.comopnentType,
           n = t.comopnentName,
           i = t.index,
@@ -778,17 +778,17 @@
           x = p[1],
           s = void 0 === t.fold || t.fold
         return vt(
-          Q,
+          $,
           { bgColor: a, mainColor: u, bgImage: null === t || void 0 === t ? void 0 : t.bgImage },
           vt(
-            T.Z,
+            I.Z,
             {
               py: ['40px', '80px', '106px'],
               width: ['auto', 'auto', '792px'],
               px: ['16px', '55px', 0],
               sx: { margin: '0 auto' },
             },
-            vt(g.Z, {
+            vt(h.Z, {
               variant: 'body2',
               fontSize: ['14px', '16px', '16px'],
               lineHeight: ['20px', '24px', '24px'],
@@ -806,7 +806,7 @@
             }),
             s &&
               vt(
-                g.Z,
+                h.Z,
                 {
                   variant: 'linkBody',
                   color: 't.yellow',
@@ -833,7 +833,7 @@
       function Ct(t) {
         var e,
           o,
-          n = (0, m.ZK)(),
+          n = (0, f.ZK)(),
           i = t.type,
           r = t.name,
           l = t.parentIndex,
@@ -843,7 +843,7 @@
           p = t.tagText
         return u && p
           ? kt(
-              g.Z,
+              h.Z,
               {
                 variant: 'subtitle2',
                 px: '8px',
@@ -871,9 +871,9 @@
         Ft = { img: 'IMAGE', video: 'VIDEO', audio: 'AUDIO' }
       const Vt = function (t) {
         var e,
-          o = (0, m.ZK)(),
+          o = (0, f.ZK)(),
           n = (0, c.useRef)(null),
-          i = (0, m.GS)(),
+          i = (0, f.GS)(),
           r = i.isMobile,
           a = i.isDesktop,
           u = t.bg,
@@ -881,37 +881,37 @@
           d = t.comopnentType,
           x = t.comopnentName,
           s = t.index,
-          v = t.eventNumber,
-          w = t.title,
-          k = N[p],
-          C = k.bgColor,
-          y = k.mainColor,
-          I = k.subColor,
-          S = (null === t || void 0 === t || null === (e = t.list) || void 0 === e ? void 0 : e.listName2) || [],
-          E = (0, c.useState)(0),
-          F = E[0],
-          V = E[1],
+          m = t.eventNumber,
+          Z = t.title,
+          C = N[p],
+          y = C.bgColor,
+          T = C.mainColor,
+          S = C.subColor,
+          E = (null === t || void 0 === t || null === (e = t.list) || void 0 === e ? void 0 : e.listName2) || [],
+          z = (0, c.useState)(0),
+          F = z[0],
+          V = z[1],
           D = (0, c.useState)(320),
           A = D[0],
           W = D[1],
           H = (0, c.useState)(320),
           j = H[0],
           B = H[1],
-          R = (0, c.createRef)(null),
-          G = (0, c.useMemo)(
+          K = (0, c.createRef)(null),
+          R = (0, c.useMemo)(
             function () {
-              return (0, l.Z)((0, l.Z)({}, S[F]), {}, { index: F })
+              return (0, l.Z)((0, l.Z)({}, E[F]), {}, { index: F })
             },
-            [F, S],
+            [F, E],
           ),
-          U = (0, c.useMemo)(
+          M = (0, c.useMemo)(
             function () {
-              var t = S.length
+              var t = E.length
               return { prev: t > 4 && F > 3, next: t > 4 && F < t - 1 }
             },
-            [F, S],
+            [F, E],
           ),
-          O = (0, c.useMemo)(
+          U = (0, c.useMemo)(
             function () {
               return F > 3 ? (r ? 129 : a ? 169 : 136) * (3 - F) : 0
             },
@@ -923,36 +923,36 @@
               var t,
                 e,
                 o =
-                  (null === (t = S[0]) || void 0 === t ? void 0 : t.workImage) ||
-                  (null === (e = S[0]) || void 0 === e ? void 0 : e.workCover)
-              ;(0, Z.pS)((0, z.U1)(o), function (t, e) {
+                  (null === (t = E[0]) || void 0 === t ? void 0 : t.workImage) ||
+                  (null === (e = E[0]) || void 0 === e ? void 0 : e.workCover)
+              ;(0, k.pS)((0, v.U1)(o), function (t, e) {
                 var o = t
                 ;+t > 0 && (o = Math.round((j / e) * t)), W(o)
               })
             },
-            [S, j],
+            [E, j],
           ),
           (0, c.useEffect)(
             function () {
-              var t = R.current.offsetWidth
+              var t = K.current.offsetWidth
               t && B(t)
             },
-            [R],
+            [K],
           ),
           Nt(
-            Q,
+            $,
             {
-              bgColor: C,
-              mainColor: y,
-              subColor: I,
+              bgColor: y,
+              mainColor: T,
+              subColor: S,
               bgImage: null === t || void 0 === t ? void 0 : t.bgImage,
-              title: w ? o(''.concat(d, '-').concat(x, '-').concat(s, '-title-').concat(v), { defaultValue: w }) : '',
+              title: Z ? o(''.concat(d, '-').concat(x, '-').concat(s, '-title-').concat(m), { defaultValue: Z }) : '',
             },
             Nt(
-              f.Z,
+              g.Z,
               { flexDirection: ['column', 'row'] },
               Nt(
-                f.Z,
+                g.Z,
                 {
                   flexDirection: 'column',
                   pr: [0, 44, 74],
@@ -969,10 +969,10 @@
                       return V(e)
                     },
                   },
-                  S.map(function (t, e) {
+                  E.map(function (t, e) {
                     return Nt(
-                      T.Z,
-                      { ref: R, key: e, height: A },
+                      I.Z,
+                      { ref: K, key: e, height: A },
                       Nt(wt.Z, {
                         auto: !1,
                         preview: !1,
@@ -986,12 +986,12 @@
                     )
                   }),
                 ),
-                S.length > 1 &&
+                E.length > 1 &&
                   Nt(
-                    T.Z,
+                    I.Z,
                     { width: '100%', mt: ['16px', '16px', '24px'], sx: { overflow: 'hidden', position: 'relative' } },
-                    U.prev &&
-                      Nt(M.Z, {
+                    M.prev &&
+                      Nt(G.Z, {
                         width: '24px',
                         height: '24px',
                         sx: {
@@ -1002,17 +1002,17 @@
                           transform: 'rotateY(180deg)',
                           flexShrink: 0,
                         },
-                        src: ''.concat(b.Xs, '/image/julia/nft/naraka/caret.svg'),
+                        src: ''.concat(w.Xs, '/image/julia/nft/naraka/caret.svg'),
                         onClick: function () {
                           return null === n || void 0 === n ? void 0 : n.current.slick.slickPrev()
                         },
                       }),
                     Nt(
-                      f.Z,
-                      { sx: { transform: 'translateX('.concat(O, 'px)') } },
-                      S.map(function (t, e) {
+                      g.Z,
+                      { sx: { transform: 'translateX('.concat(U, 'px)') } },
+                      E.map(function (t, e) {
                         return Nt(
-                          T.Z,
+                          I.Z,
                           {
                             flex: 'none',
                             key: e,
@@ -1023,7 +1023,7 @@
                               borderRadius: '8px',
                               marginRight: ['8px', '15px', '25px'],
                               cursor: 'pointer',
-                              opacity: G.index === e ? '1' : '0.6',
+                              opacity: R.index === e ? '1' : '0.6',
                             },
                             onClick: function () {
                               null === n || void 0 === n || n.current.slick.slickGoTo(e)
@@ -1039,11 +1039,11 @@
                         )
                       }),
                     ),
-                    U.next &&
-                      Nt(M.Z, {
+                    M.next &&
+                      Nt(G.Z, {
                         width: '24px',
                         height: '24px',
-                        src: ''.concat(b.Xs, '/image/julia/nft/naraka/caret.svg'),
+                        src: ''.concat(w.Xs, '/image/julia/nft/naraka/caret.svg'),
                         onClick: function () {
                           null === n || void 0 === n || n.current.slick.slickNext()
                         },
@@ -1051,27 +1051,27 @@
                       }),
                   ),
               ),
-              S.map(function (t, e) {
+              E.map(function (t, e) {
                 return (
-                  e === G.index &&
+                  e === R.index &&
                   Nt(
-                    f.Z,
-                    { key: e, flexDirection: 'column', pb: S.length > 1 ? [0, 58, 90] : 0, flex: 1 },
+                    g.Z,
+                    { key: e, flexDirection: 'column', pb: E.length > 1 ? [0, 58, 90] : 0, flex: 1 },
                     Nt(
-                      g.Z,
-                      { fontSize: ['20px', '20px', '32px'], fontWeight: '500', color: y, mb: '16px', mt: [32, 0, 0] },
+                      h.Z,
+                      { fontSize: ['20px', '20px', '32px'], fontWeight: '500', color: T, mb: '16px', mt: [32, 0, 0] },
                       t.workName,
                     ),
                     t.text &&
                       Nt(
-                        g.Z,
-                        { variant: 'body2', fontSize: ['12px', '14px', '14px'], color: I },
-                        o(''.concat(d, '-').concat(x, '-').concat(s, '-').concat(e, '-text-').concat(v), {
+                        h.Z,
+                        { variant: 'body2', fontSize: ['12px', '14px', '14px'], color: S },
+                        o(''.concat(d, '-').concat(x, '-').concat(s, '-').concat(e, '-text-').concat(m), {
                           defaultValue: t.text,
                         }),
                       ),
                     Nt(
-                      f.Z,
+                      g.Z,
                       {
                         flex: 1,
                         flexDirection: ['row', 'column', 'column'],
@@ -1081,7 +1081,7 @@
                       },
                       t.price &&
                         Nt(
-                          f.Z,
+                          g.Z,
                           {
                             alignItems: 'center',
                             fontSize: ['20px', '20px', '24px'],
@@ -1089,7 +1089,7 @@
                             fontWeight: 500,
                           },
                           Nt(zt.Z, { mr: '8px', size: ['20px', '20px', '24px'], currency: t.currency }),
-                          Nt(g.Z, { color: y }, (0, Et.z1)(t.price), ' ', t.currency),
+                          Nt(h.Z, { color: T }, (0, Et.z1)(t.price), ' ', t.currency),
                         ),
                       t.buttonText &&
                         Nt(
@@ -1100,17 +1100,19 @@
                             sx: { overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' },
                           },
                           Nt(
-                            h.Z,
+                            b.Z,
                             {
-                              href: it(
-                                null === t || void 0 === t ? void 0 : t.buttonLink,
-                                null === t || void 0 === t ? void 0 : t.linkType,
+                              href: (0, v.KQ)(
+                                it(
+                                  null === t || void 0 === t ? void 0 : t.buttonLink,
+                                  null === t || void 0 === t ? void 0 : t.linkType,
+                                ),
                               ),
                               target: '_blank',
                               color: 't.primary',
                               sx: { width: '100%', height: '32px', lineHeight: '32px', display: 'block' },
                             },
-                            o(''.concat(d, '-').concat(x, '-').concat(s, '-').concat(e, '-buttonText-').concat(v), {
+                            o(''.concat(d, '-').concat(x, '-').concat(s, '-').concat(e, '-buttonText-').concat(m), {
                               defaultValue: t.buttonText,
                             }),
                           ),
@@ -1127,7 +1129,7 @@
         At = { img: 'IMAGE', video: 'VIDEO', audio: 'AUDIO' }
       const Wt = function (t) {
         var e,
-          o = (0, m.ZK)(),
+          o = (0, f.ZK)(),
           n = t.bg,
           i = void 0 === n ? 'dark' : n,
           r = t.comopnentType,
@@ -1138,48 +1140,48 @@
           d = N[i],
           x = d.bgColor,
           s = d.mainColor,
-          v = d.subColor,
-          b = (null === t || void 0 === t || null === (e = t.list) || void 0 === e ? void 0 : e.listName2) || [],
-          w = (0, c.useState)(320),
-          k = w[0],
-          C = w[1],
-          y = (0, c.useState)(320),
-          I = y[0],
-          S = y[1],
-          E = (0, c.createRef)(null)
+          m = d.subColor,
+          w = (null === t || void 0 === t || null === (e = t.list) || void 0 === e ? void 0 : e.listName2) || [],
+          Z = (0, c.useState)(320),
+          C = Z[0],
+          y = Z[1],
+          T = (0, c.useState)(320),
+          S = T[0],
+          E = T[1],
+          z = (0, c.createRef)(null)
         return (
           (0, c.useEffect)(
             function () {
               var t,
                 e,
                 o =
-                  (null === (t = b[0]) || void 0 === t ? void 0 : t.workImage) ||
-                  (null === (e = b[0]) || void 0 === e ? void 0 : e.workCover)
-              ;(0, Z.pS)((0, z.U1)(o), function (t, e) {
+                  (null === (t = w[0]) || void 0 === t ? void 0 : t.workImage) ||
+                  (null === (e = w[0]) || void 0 === e ? void 0 : e.workCover)
+              ;(0, k.pS)((0, v.U1)(o), function (t, e) {
                 var o = t
-                ;+t > 0 && (o = Math.round((I / e) * t)), C(o)
+                ;+t > 0 && (o = Math.round((S / e) * t)), y(o)
               })
             },
-            [b, I],
+            [w, S],
           ),
           (0, c.useEffect)(
             function () {
-              var t = E.current.offsetWidth
-              t && S(t)
+              var t = z.current.offsetWidth
+              t && E(t)
             },
-            [E],
+            [z],
           ),
           Dt(
-            Q,
+            $,
             {
               bgColor: x,
               mainColor: s,
-              subColor: v,
+              subColor: m,
               bgImage: null === t || void 0 === t ? void 0 : t.bgImage,
               title: p ? o(''.concat(r, '-').concat(l, '-').concat(a, '-title-').concat(u), { defaultValue: p }) : '',
             },
             Dt(
-              X.Z,
+              Q.Z,
               {
                 columns: [1, 3, 3],
                 sx: {
@@ -1189,13 +1191,13 @@
                   gridRowGap: ['32px', '48px', '60px'],
                 },
               },
-              b.map(function (t, e) {
+              w.map(function (t, e) {
                 return Dt(
-                  f.Z,
-                  { ref: E, key: e, flexDirection: 'column' },
+                  g.Z,
+                  { ref: z, key: e, flexDirection: 'column' },
                   Dt(
-                    T.Z,
-                    { sx: { position: 'relative', width: '100%', height: k } },
+                    I.Z,
+                    { sx: { position: 'relative', width: '100%', height: C } },
                     Dt(wt.Z, {
                       disableFilter: !0,
                       disableBorder: !0,
@@ -1209,11 +1211,11 @@
                     }),
                   ),
                   Dt(
-                    f.Z,
+                    g.Z,
                     { flexDirection: 'column', flex: 1 },
                     t.workName &&
                       Dt(
-                        g.Z,
+                        h.Z,
                         {
                           variant: 'body2',
                           fontSize: ['20px', '20px', '24px'],
@@ -1227,15 +1229,15 @@
                       ),
                     t.text &&
                       Dt(
-                        g.Z,
-                        { variant: 'body2', fontSize: ['12px', '14px', '14px'], color: v },
+                        h.Z,
+                        { variant: 'body2', fontSize: ['12px', '14px', '14px'], color: m },
                         o(''.concat(r, '-').concat(l, '-').concat(a, '-').concat(e, '-text-').concat(u), {
                           defaultValue: t.text,
                         }),
                       ),
                     (t.price || t.buttonText) &&
                       Dt(
-                        f.Z,
+                        g.Z,
                         {
                           flex: 1,
                           mt: [20, 16, 24],
@@ -1245,10 +1247,10 @@
                         },
                         t.price &&
                           Dt(
-                            f.Z,
+                            g.Z,
                             { alignItems: 'center', fontSize: '20px', mb: ['0', '12px', '16px'], fontWeight: 500 },
                             Dt(zt.Z, { mr: '8px', size: 20, currency: t.currency }),
-                            Dt(g.Z, { color: s }, (0, Et.z1)(t.price), ' ', t.currency),
+                            Dt(h.Z, { color: s }, (0, Et.z1)(t.price), ' ', t.currency),
                           ),
                         t.buttonText &&
                           Dt(
@@ -1259,9 +1261,9 @@
                               sx: { overflow: 'hidden', whiteSpace: 'nowrap', textOverflow: 'ellipsis' },
                             },
                             Dt(
-                              h.Z,
+                              b.Z,
                               {
-                                href: it(t.buttonLink, null === t || void 0 === t ? void 0 : t.linkType),
+                                href: (0, v.KQ)(it(t.buttonLink, null === t || void 0 === t ? void 0 : t.linkType)),
                                 target: '_blank',
                                 color: 't.primary',
                                 sx: { width: '100%', height: '32px', lineHeight: '32px', display: 'block' },
@@ -1282,7 +1284,7 @@
       var Ht = u().createElement
       const jt = function (t) {
         var e,
-          o = (0, m.ZK)(),
+          o = (0, f.ZK)(),
           n = (0, c.useRef)(null),
           i = t.bg,
           r = void 0 === i ? 'dark' : i,
@@ -1292,57 +1294,57 @@
           d = t.eventNumber,
           x = t.title,
           s = N[r],
-          v = s.bgColor,
-          w = s.mainColor,
-          k = s.subColor,
-          C = (0, m.GS)(),
-          y = C.isMobile,
-          I = C.isDesktop,
-          S = (null === t || void 0 === t || null === (e = t.list) || void 0 === e ? void 0 : e.listName2) || [],
-          E = (0, c.useState)(0),
-          F = E[0],
-          D = E[1],
+          m = s.bgColor,
+          Z = s.mainColor,
+          C = s.subColor,
+          y = (0, f.GS)(),
+          T = y.isMobile,
+          S = y.isDesktop,
+          E = (null === t || void 0 === t || null === (e = t.list) || void 0 === e ? void 0 : e.listName2) || [],
+          z = (0, c.useState)(0),
+          F = z[0],
+          D = z[1],
           A = (0, c.useState)(320),
           W = A[0],
           H = A[1],
           j = (0, c.useState)(320),
           B = j[0],
-          R = j[1],
-          G = (0, c.createRef)(null),
+          K = j[1],
+          R = (0, c.createRef)(null),
+          M = (0, c.useMemo)(
+            function () {
+              var t = E.length
+              return { prev: t > 6 && F > 5, next: t > 6 && F < t - 1 }
+            },
+            [F],
+          ),
           U = (0, c.useMemo)(
             function () {
-              var t = S.length
-              return { prev: t > 6 && F > 5, next: t > 6 && F < t - 1 }
+              return (0, l.Z)((0, l.Z)({}, E[F]), {}, { index: F })
             },
             [F],
           ),
           O = (0, c.useMemo)(
             function () {
-              return (0, l.Z)((0, l.Z)({}, S[F]), {}, { index: F })
-            },
-            [F],
-          ),
-          K = (0, c.useMemo)(
-            function () {
-              return F > 5 ? (y ? 60 : I ? 72 : 60) * (5 - F) : 0
+              return F > 5 ? (T ? 60 : S ? 72 : 60) * (5 - F) : 0
             },
             [F],
           )
         return (
           (0, c.useEffect)(
             function () {
-              var t = G.current.offsetWidth
-              t && R(t)
+              var t = R.current.offsetWidth
+              t && K(t)
             },
-            [G],
+            [R],
           ),
           (0, c.useEffect)(
             function () {
               var t, e
-              ;(0, Z.pS)(
-                (0, z.U1)(
-                  (null === (t = S[0]) || void 0 === t ? void 0 : t.workImage) ||
-                    (null === (e = S[0]) || void 0 === e ? void 0 : e.workCover),
+              ;(0, k.pS)(
+                (0, v.U1)(
+                  (null === (t = E[0]) || void 0 === t ? void 0 : t.workImage) ||
+                    (null === (e = E[0]) || void 0 === e ? void 0 : e.workCover),
                 ),
                 function (t, e) {
                   var o = t
@@ -1350,33 +1352,33 @@
                 },
               )
             },
-            [S, B],
+            [E, B],
           ),
           Ht(
-            Q,
+            $,
             {
-              bgColor: v,
-              mainColor: w,
-              subColor: k,
+              bgColor: m,
+              mainColor: Z,
+              subColor: C,
               bgImage: null === t || void 0 === t ? void 0 : t.bgImage,
               title: x ? o(''.concat(a, '-').concat(u, '-').concat(p, '-title-').concat(d), { defaultValue: x }) : '',
             },
             Ht(
-              f.Z,
+              g.Z,
               { flexWrap: 'wrap', flexDirection: ['column', 'row'] },
               Ht(
-                T.Z,
+                I.Z,
                 {
                   flex: 1,
                   mr: 'left' === (null === t || void 0 === t ? void 0 : t.textAlign) ? [0, 48, 104] : 0,
                   ml: 'right' === (null === t || void 0 === t ? void 0 : t.textAlign) ? [0, 48, 104] : 0,
-                  sx: { order: y ? 0 : 'right' === (null === t || void 0 === t ? void 0 : t.textAlign) ? 1 : 0 },
+                  sx: { order: T ? 0 : 'right' === (null === t || void 0 === t ? void 0 : t.textAlign) ? 1 : 0 },
                 },
                 t.name &&
                   Ht(
-                    g.Z,
+                    h.Z,
                     {
-                      color: w,
+                      color: Z,
                       variant: 'headline3',
                       fontSize: [24, 32],
                       lineHeight: ['32px', '40px'],
@@ -1386,10 +1388,10 @@
                   ),
                 t.text &&
                   Ht(
-                    g.Z,
+                    h.Z,
                     {
                       variant: 'body1',
-                      color: k,
+                      color: C,
                       fontSize: [14, 14, 16],
                       mb: [24, 0, 0],
                       sx: {
@@ -1417,9 +1419,9 @@
                       },
                     },
                     Ht(
-                      h.Z,
+                      b.Z,
                       {
-                        href: it(O.buttonLink, null === O || void 0 === O ? void 0 : O.linkType),
+                        href: (0, v.KQ)(it(U.buttonLink, null === U || void 0 === U ? void 0 : U.linkType)),
                         target: '_blank',
                         color: 't.primary',
                         sx: { width: '100%', height: '32px', lineHeight: '32px', display: 'block' },
@@ -1431,15 +1433,15 @@
                   ),
               ),
               Ht(
-                f.Z,
+                g.Z,
                 {
                   flexDirection: 'column',
                   alignItems: ['start', 'center'],
                   width: ['343px', '352px', '492px'],
-                  sx: { order: y || 'right' === (null === t || void 0 === t ? void 0 : t.textAlign) ? 0 : 1 },
+                  sx: { order: T || 'right' === (null === t || void 0 === t ? void 0 : t.textAlign) ? 0 : 1 },
                 },
                 Ht(
-                  T.Z,
+                  I.Z,
                   { width: ['343px', '352px', '492px'] },
                   Ht(
                     St.Z,
@@ -1451,10 +1453,10 @@
                         return D(e)
                       },
                     },
-                    S.map(function (t, e) {
+                    E.map(function (t, e) {
                       return Ht(
-                        T.Z,
-                        { ref: G, key: e, height: W },
+                        I.Z,
+                        { ref: R, key: e, height: W },
                         Ht(wt.Z, {
                           auto: !1,
                           preview: !1,
@@ -1471,19 +1473,19 @@
                   ),
                 ),
                 Ht(
-                  g.Z,
+                  h.Z,
                   {
-                    color: w,
+                    color: Z,
                     my: [16, 12],
                     fontSize: [16, 16, 24],
                     lineHeight: ['24px', '24px', '32px'],
                     fontWeight: [500, 500, 600],
                   },
-                  null === O || void 0 === O ? void 0 : O.workName,
+                  null === U || void 0 === U ? void 0 : U.workName,
                 ),
-                S.length > 1 &&
+                E.length > 1 &&
                   Ht(
-                    T.Z,
+                    I.Z,
                     {
                       sx: {
                         overflow: 'hidden',
@@ -1492,8 +1494,8 @@
                         height: [68, 'auto'],
                       },
                     },
-                    U.prev &&
-                      Ht(M.Z, {
+                    M.prev &&
+                      Ht(G.Z, {
                         width: '24px',
                         height: '24px',
                         sx: {
@@ -1504,21 +1506,21 @@
                           transform: 'rotateY(180deg)',
                           flexShrink: 0,
                         },
-                        src: ''.concat(b.Xs, '/image/julia/nft/naraka/caret.svg'),
+                        src: ''.concat(w.Xs, '/image/julia/nft/naraka/caret.svg'),
                         onClick: function () {
                           return null === n || void 0 === n ? void 0 : n.current.slick.slickPrev()
                         },
                       }),
                     Ht(
-                      f.Z,
+                      g.Z,
                       {
                         height: ['48px', '48px', '60px'],
                         justifyContent: 'center',
-                        sx: { transform: 'translateX('.concat(K, 'px)') },
+                        sx: { transform: 'translateX('.concat(O, 'px)') },
                       },
-                      S.map(function (t, e) {
+                      E.map(function (t, e) {
                         return Ht(
-                          T.Z,
+                          I.Z,
                           {
                             flex: 'none',
                             key: e,
@@ -1541,11 +1543,11 @@
                         )
                       }),
                     ),
-                    U.next &&
-                      Ht(M.Z, {
+                    M.next &&
+                      Ht(G.Z, {
                         width: '24px',
                         height: '24px',
-                        src: ''.concat(b.Xs, '/image/julia/nft/naraka/caret.svg'),
+                        src: ''.concat(w.Xs, '/image/julia/nft/naraka/caret.svg'),
                         onClick: function () {
                           return null === n || void 0 === n ? void 0 : n.current.slick.slickNext()
                         },
@@ -1567,9 +1569,9 @@
                     },
                   },
                   Ht(
-                    h.Z,
+                    b.Z,
                     {
-                      href: it(O.buttonLink, null === O || void 0 === O ? void 0 : O.linkType),
+                      href: (0, v.KQ)(it(U.buttonLink, null === U || void 0 === U ? void 0 : U.linkType)),
                       target: '_blank',
                       color: 't.primary',
                       sx: { width: '100%', height: '32px', lineHeight: '32px', display: 'block' },
@@ -1584,17 +1586,17 @@
         )
       }
       var Bt = ['eventNumber', 'eventConfigJsonString'],
-        Rt = u().createElement,
-        Gt = {
-          Header1: R,
-          Header2: K,
+        Kt = u().createElement,
+        Rt = {
+          Header1: K,
+          Header2: O,
           Header3: J,
           Artist1: et,
           Artist2: at,
           Copywriting1: st,
           Copywriting2: ft,
           Copywriting3: function (t) {
-            var e = (0, m.ZK)(),
+            var e = (0, f.ZK)(),
               o = t.comopnentType,
               n = t.comopnentName,
               i = t.index,
@@ -1603,10 +1605,10 @@
               a = l.bgColor,
               c = l.fontColor
             return ht(
-              Q,
+              $,
               { bg: !0, bgColor: a, mainColor: c, bgImage: null === t || void 0 === t ? void 0 : t.bgImage },
               ht(
-                f.Z,
+                g.Z,
                 {
                   height: ['200px', '399px', '399px'],
                   flexDirection: 'column',
@@ -1614,7 +1616,7 @@
                   justifyContent: 'center',
                 },
                 ht(
-                  g.Z,
+                  h.Z,
                   {
                     color: c,
                     sx: {
@@ -1631,7 +1633,7 @@
                     width: ['327px', '540px', '100%'],
                   },
                   'Open ',
-                  ht(g.Z, { sx: { display: 'inline-block', color: 'rgb(235, 172, 14)' } }, 'mystery box'),
+                  ht(h.Z, { sx: { display: 'inline-block', color: 'rgb(235, 172, 14)' } }, 'mystery box'),
                   ' to',
                   ' ',
                   e(''.concat(o, '-').concat(n, '-').concat(i, '-description-').concat(r), {
@@ -1645,11 +1647,13 @@
                     variant: 'primary',
                   },
                   ht(
-                    h.Z,
+                    b.Z,
                     {
-                      href: it(
-                        null === t || void 0 === t ? void 0 : t.buttonLink,
-                        null === t || void 0 === t ? void 0 : t.linkType,
+                      href: (0, v.KQ)(
+                        it(
+                          null === t || void 0 === t ? void 0 : t.buttonLink,
+                          null === t || void 0 === t ? void 0 : t.linkType,
+                        ),
                       ),
                       target: '_blank',
                       color: 't.primary',
@@ -1666,8 +1670,8 @@
                       defaultValue: null === t || void 0 === t ? void 0 : t.buttonText,
                     }),
                   ),
-                  ht(M.Z, {
-                    src: ''.concat(b.Xs, '/image/julia/nft/topgoal/btn-bg.png'),
+                  ht(G.Z, {
+                    src: ''.concat(w.Xs, '/image/julia/nft/topgoal/btn-bg.png'),
                     sx: { position: 'absolute', right: '0', top: '0', bottom: 0, width: '98px' },
                   }),
                 ),
@@ -1676,11 +1680,11 @@
           },
           Copywriting4: function (t) {
             return bt(
-              T.Z,
+              I.Z,
               { sx: { position: 'relative' } },
-              bt(M.Z, { src: null === t || void 0 === t ? void 0 : t.bgImage, width: '100%' }),
-              bt(h.Z, {
-                href: (0, Z.I)(t.buttonLink),
+              bt(G.Z, { src: null === t || void 0 === t ? void 0 : t.bgImage, width: '100%' }),
+              bt(b.Z, {
+                href: (0, v.KQ)((0, k.I)(t.buttonLink)),
                 target: '_blank',
                 sx: {
                   position: 'absolute',
@@ -1696,7 +1700,7 @@
             )
           },
           Copywriting5: function (t) {
-            var e = (0, m.ZK)(),
+            var e = (0, f.ZK)(),
               o = t.comopnentType,
               n = t.comopnentName,
               i = t.index,
@@ -1708,40 +1712,40 @@
               d = p[0],
               x = p[1],
               s = (0, c.useState)(320),
-              v = s[0],
-              h = s[1],
-              b = (0, c.createRef)(null)
+              m = s[0],
+              b = s[1],
+              w = (0, c.createRef)(null)
             return (
               (0, c.useEffect)(
                 function () {
                   var e =
                     (null === t || void 0 === t ? void 0 : t.workImage) ||
                     (null === t || void 0 === t ? void 0 : t.workCover)
-                  ;(0, Z.pS)((0, z.U1)(e), function (t, e) {
+                  ;(0, k.pS)((0, v.U1)(e), function (t, e) {
                     if (+t > 0) {
-                      var o = Math.round((v / e) * t)
+                      var o = Math.round((m / e) * t)
                       x(o)
                     }
                   })
                 },
-                [t, v],
+                [t, m],
               ),
               (0, c.useEffect)(
                 function () {
-                  var t = b.current.offsetWidth
-                  t && h(t)
+                  var t = w.current.offsetWidth
+                  t && b(t)
                 },
-                [b],
+                [w],
               ),
               Zt(
-                Q,
+                $,
                 { bgColor: a, mainColor: u, bgImage: null === t || void 0 === t ? void 0 : t.bgImage },
                 Zt(
-                  f.Z,
+                  g.Z,
                   { flexDirection: 'column', alignItems: 'center', justifyContent: 'center' },
                   (null === t || void 0 === t ? void 0 : t.mainTitle) &&
                     Zt(
-                      g.Z,
+                      h.Z,
                       {
                         color: u,
                         as: 'h2',
@@ -1757,7 +1761,7 @@
                     ),
                   (null === t || void 0 === t ? void 0 : t.subTitle) &&
                     Zt(
-                      g.Z,
+                      h.Z,
                       {
                         variant: 'body2',
                         color: u,
@@ -1776,9 +1780,9 @@
                       }),
                     ),
                   Zt(
-                    T.Z,
+                    I.Z,
                     {
-                      ref: b,
+                      ref: w,
                       width: ['343px', '320px', '640px'],
                       height: d,
                       sx: { borderRadius: '8px', overflow: 'hidden' },
@@ -1811,7 +1815,7 @@
           },
           Copywriting6: function (t) {
             var e,
-              o = (0, m.ZK)(),
+              o = (0, f.ZK)(),
               n = t.comopnentType,
               i = t.comopnentName,
               r = t.index,
@@ -1822,16 +1826,16 @@
               d = u.fontColor,
               x = u.cardColor,
               s = (null === t || void 0 === t || null === (e = t.list) || void 0 === e ? void 0 : e.listName2) || [],
-              v = +(null === t || void 0 === t ? void 0 : t.rowNumber),
-              h = (0, c.useState)([]),
-              b = h[0],
-              w = h[1],
-              k = (0, c.useState)(v),
-              C = k[0],
-              y = k[1],
-              I = (0, c.useState)(!1),
-              S = I[0],
-              E = I[1],
+              m = +(null === t || void 0 === t ? void 0 : t.rowNumber),
+              b = (0, c.useState)([]),
+              w = b[0],
+              Z = b[1],
+              C = (0, c.useState)(m),
+              y = C[0],
+              T = C[1],
+              S = (0, c.useState)(!1),
+              E = S[0],
+              z = S[1],
               N = (0, c.useState)(320),
               F = N[0],
               V = N[1],
@@ -1841,16 +1845,16 @@
               H = (0, c.useState)(0),
               j = H[0],
               B = H[1],
-              R = (0, c.createRef)(null),
-              M = (0, c.useCallback)(
+              K = (0, c.createRef)(null),
+              G = (0, c.useCallback)(
                 function () {
-                  w(s.slice(0, v ? 3 * C : s.length))
+                  Z(s.slice(0, m ? 3 * y : s.length))
                 },
-                [C],
+                [y],
               ),
-              U = (0, c.useCallback)(function () {
-                y(function (t) {
-                  return t >= s.length / 3 ? v : t + C
+              M = (0, c.useCallback)(function () {
+                T(function (t) {
+                  return t >= s.length / 3 ? m : t + y
                 })
               }, [])
             return (
@@ -1858,7 +1862,7 @@
                 function () {
                   var t,
                     e = null === (t = s[0]) || void 0 === t ? void 0 : t.coverImg
-                  ;(0, Z.pS)((0, z.U1)(e), function (t, e) {
+                  ;(0, k.pS)((0, v.U1)(e), function (t, e) {
                     if (+t > 0) {
                       var o = Math.round((A / e) * t)
                       V(o)
@@ -1870,41 +1874,41 @@
               (0, c.useEffect)(
                 function () {
                   var t,
-                    e = null === R || void 0 === R || null === (t = R.current) || void 0 === t ? void 0 : t.offsetWidth
+                    e = null === K || void 0 === K || null === (t = K.current) || void 0 === t ? void 0 : t.offsetWidth
                   e && W(e)
                 },
-                [R],
+                [K],
               ),
               (0, c.useEffect)(
                 function () {
-                  M()
+                  G()
                 },
-                [C],
+                [y],
               ),
               (0, c.useEffect)(
                 function () {
                   var t = (null === s || void 0 === s ? void 0 : s.length) || 0
-                  E(v > 0 && t > 3 * v && b.length <= t)
+                  z(m > 0 && t > 3 * m && w.length <= t)
                 },
-                [b],
+                [w],
               ),
               (0, c.useEffect)(
                 function () {
-                  C === v && j > 0 && window.scrollTo({ top: j })
+                  y === m && j > 0 && window.scrollTo({ top: j })
                 },
-                [b],
+                [w],
               ),
               (0, c.useEffect)(
                 function () {
-                  b.length <= 3 * v * 2 &&
-                    b.length > 3 * v &&
-                    b.length <= s.length &&
+                  w.length <= 3 * m * 2 &&
+                    w.length > 3 * m &&
+                    w.length <= s.length &&
                     B(document.documentElement.scrollTop)
                 },
-                [b],
+                [w],
               ),
               Tt(
-                Q,
+                $,
                 {
                   bgColor: p,
                   mainColor: d,
@@ -1913,10 +1917,10 @@
                   title: a,
                 },
                 Tt(
-                  T.Z,
+                  I.Z,
                   null,
                   Tt(
-                    X.Z,
+                    Q.Z,
                     {
                       columns: [1, 3, 3],
                       sx: {
@@ -1926,12 +1930,12 @@
                         gridRowGap: ['16px', '32px', '32px'],
                       },
                     },
-                    b.map(function (e, a) {
+                    w.map(function (e, a) {
                       var c
                       return Tt(
-                        f.Z,
+                        g.Z,
                         {
-                          ref: R,
+                          ref: K,
                           key: a,
                           flexDirection: 'column',
                           onClick: function () {
@@ -1943,20 +1947,20 @@
                           bg: x,
                           sx:
                             ((c = { position: 'relative', borderRadius: [4, 4, 8] }),
-                            (0, G.Z)(c, 'borderRadius', '8px'),
-                            (0, G.Z)(c, 'overflow', 'hidden'),
-                            (0, G.Z)(c, 'cursor', 'pointer'),
-                            (0, G.Z)(c, '&:hover', {
+                            (0, R.Z)(c, 'borderRadius', '8px'),
+                            (0, R.Z)(c, 'overflow', 'hidden'),
+                            (0, R.Z)(c, 'cursor', 'pointer'),
+                            (0, R.Z)(c, '&:hover', {
                               boxShadow:
                                 '0px 16px 32px rgba(0, 0, 0, 0.16), 0px 8px 16px rgba(0, 0, 0, 0.16), inset 0px 0px 2px rgba(94, 102, 115, 0.9)',
                             }),
                             c),
                         },
                         Tt(
-                          T.Z,
+                          I.Z,
                           { sx: { position: 'relative', width: '100%', height: F } },
                           Tt(
-                            T.Z,
+                            I.Z,
                             { sx: { position: 'absolute', top: '12px', right: '12px', zIndex: 1 } },
                             Tt(
                               yt,
@@ -1969,7 +1973,7 @@
                             ),
                           ),
                           Tt(
-                            T.Z,
+                            I.Z,
                             { height: F },
                             Tt(wt.Z, {
                               disableFilter: !0,
@@ -1986,11 +1990,11 @@
                         ),
                         (e.title || e.description) &&
                           Tt(
-                            f.Z,
+                            g.Z,
                             { flexDirection: 'column', flex: 1, p: [16, 16, 24] },
                             e.title &&
                               Tt(
-                                g.Z,
+                                h.Z,
                                 {
                                   variant: 'headline5',
                                   as: 'h5',
@@ -2006,7 +2010,7 @@
                               ),
                             e.description &&
                               Tt(
-                                g.Z,
+                                h.Z,
                                 {
                                   variant: 'body2',
                                   fontSize: ['12px', '14px', '14px'],
@@ -2022,17 +2026,17 @@
                       )
                     }),
                   ),
-                  S &&
+                  E &&
                     Tt(
-                      g.Z,
+                      h.Z,
                       {
                         variant: 'subtitle2',
                         color: d,
                         mt: [40],
                         sx: { cursor: 'pointer', textAlign: 'center', opacity: 0.8, '&:hover': { opacity: 1 } },
-                        onClick: U,
+                        onClick: M,
                       },
-                      (null === b || void 0 === b ? void 0 : b.length) !==
+                      (null === w || void 0 === w ? void 0 : w.length) !==
                         (null === s || void 0 === s ? void 0 : s.length)
                         ? o('winter-button-show-more', { defaultValue: 'Show more' })
                         : o('winter-button-show-less', { defaultValue: 'Show less' }),
@@ -2043,7 +2047,7 @@
           },
           Copywriting7: function (t) {
             var e,
-              o = (0, m.ZK)(),
+              o = (0, f.ZK)(),
               n = t.comopnentType,
               i = t.comopnentName,
               r = t.index,
@@ -2055,7 +2059,7 @@
               d = c.cardColor,
               x = (null === t || void 0 === t || null === (e = t.list) || void 0 === e ? void 0 : e.listName2) || []
             return It(
-              Q,
+              $,
               {
                 bgColor: u,
                 mainColor: p,
@@ -2064,7 +2068,7 @@
                 title: a,
               },
               It(
-                X.Z,
+                Q.Z,
                 {
                   columns: 1,
                   sx: {
@@ -2076,7 +2080,7 @@
                 },
                 x.map(function (t, e) {
                   return It(
-                    f.Z,
+                    g.Z,
                     {
                       key: e,
                       flexDirection: 'column',
@@ -2089,11 +2093,11 @@
                       sx: { position: 'relative' },
                     },
                     It(
-                      f.Z,
+                      g.Z,
                       { flexDirection: 'column', flex: 1 },
                       t.title &&
                         It(
-                          g.Z,
+                          h.Z,
                           {
                             variant: 'headline5',
                             as: 'h5',
@@ -2110,7 +2114,7 @@
                         ),
                       t.description &&
                         It(
-                          g.Z,
+                          h.Z,
                           { bg: d, variant: 'body2', color: p, p: [16], fontSize: 16 },
                           o(''.concat(n, '-').concat(i, '-').concat(r, '-').concat(e, '-description-').concat(l), {
                             defaultValue: t.description,
@@ -2126,28 +2130,28 @@
           Works2: Wt,
           Works3: jt,
         }
-      function Mt() {
+      function Gt() {
         var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-          e = (0, m.ZK)(),
+          e = (0, f.ZK)(),
           o = t.eventNumber,
           n = t.eventConfigJsonString,
           i = (0, a.Z)(t, Bt),
           r = (0, x.useRouter)(),
           s = r._history.location.query,
-          v = +(null === s || void 0 === s ? void 0 : s.isDev) || 0,
-          f = (0, c.useState)({}),
-          g = f[0],
-          h = f[1],
-          b = (0, c.useState)([]),
-          w = b[0],
-          Z = b[1],
-          k = (0, c.useState)(''),
-          C = k[0],
-          T = k[1]
+          m = +(null === s || void 0 === s ? void 0 : s.isDev) || 0,
+          g = (0, c.useState)({}),
+          h = g[0],
+          b = g[1],
+          w = (0, c.useState)([]),
+          Z = w[0],
+          k = w[1],
+          C = (0, c.useState)(''),
+          y = C[0],
+          I = C[1]
         return (
           (0, c.useEffect)(
             function () {
-              '{}' !== JSON.stringify(t) && (Z(JSON.parse(n)), h((0, l.Z)({}, i)))
+              '{}' !== JSON.stringify(t) && (k(JSON.parse(n)), b((0, l.Z)({}, i)))
             },
             [t],
           ),
@@ -2155,25 +2159,25 @@
             var t = window.location,
               e = t.origin,
               o = t.pathname
-            T(''.concat(e).concat(o))
+            I(''.concat(e).concat(o))
           }, []),
-          Rt(
+          Kt(
             d.X,
             null,
-            Rt(
+            Kt(
               p.q,
               null,
-              Rt(
+              Kt(
                 'title',
                 null,
-                e('eventName-'.concat(o), { defaultValue: g.eventName }),
+                e('eventName-'.concat(o), { defaultValue: h.eventName }),
                 '|',
                 e('seo-title', { defaultValue: 'Binance NFT' }),
               ),
-              Rt('meta', {
+              Kt('meta', {
                 name: 'keywords',
                 content: ''
-                  .concat(e('eventName-'.concat(o), { defaultValue: g.eventName }), ', ')
+                  .concat(e('eventName-'.concat(o), { defaultValue: h.eventName }), ', ')
                   .concat(
                     e('seo-keywords', {
                       defaultValue:
@@ -2181,32 +2185,32 @@
                     }),
                   ),
               }),
-              Rt('meta', {
+              Kt('meta', {
                 name: 'description',
                 content: e('eventDescription-'.concat(o), {
-                  defaultValue: (null === g || void 0 === g ? void 0 : g.eventDescription) || '',
+                  defaultValue: (null === h || void 0 === h ? void 0 : h.eventDescription) || '',
                 }),
               }),
-              Rt('meta', {
+              Kt('meta', {
                 property: 'og:description',
                 content: e('eventDescription-'.concat(o), {
-                  defaultValue: (null === g || void 0 === g ? void 0 : g.eventDescription) || '',
+                  defaultValue: (null === h || void 0 === h ? void 0 : h.eventDescription) || '',
                 }),
               }),
-              Rt('meta', { property: 'og:title', content: e('eventName-'.concat(o), { defaultValue: g.eventName }) }),
-              Rt('meta', { property: 'og:image', content: g.eventImage }),
-              Rt('link', { href: C, rel: 'canonical' }),
+              Kt('meta', { property: 'og:title', content: e('eventName-'.concat(o), { defaultValue: h.eventName }) }),
+              Kt('meta', { property: 'og:image', content: h.eventImage }),
+              Kt('link', { href: (0, v.KQ)(y), rel: 'canonical' }),
             ),
-            !v && 2 != g.status && Rt(y, { status: g.status }),
-            (v || 2 == g.status) &&
-              w.map(function (t, e) {
+            !m && 2 != h.status && Kt(T, { status: h.status }),
+            (m || 2 == h.status) &&
+              Z.map(function (t, e) {
                 var n, i, r
-                return Rt(
+                return Kt(
                   'div',
                   { key: e },
-                  Gt[null === t || void 0 === t || null === (n = t.admin) || void 0 === n ? void 0 : n.name] &&
+                  Rt[null === t || void 0 === t || null === (n = t.admin) || void 0 === n ? void 0 : n.name] &&
                     u().createElement(
-                      Gt[null === t || void 0 === t ? void 0 : t.admin.name],
+                      Rt[null === t || void 0 === t ? void 0 : t.admin.name],
                       (0, l.Z)(
                         (0, l.Z)({}, t.render),
                         {},
@@ -2225,7 +2229,7 @@
           )
         )
       }
-      Mt.getInitialProps = (function () {
+      Gt.getInitialProps = (function () {
         var t = (0, r.Z)(
           i().mark(function t(e) {
             var o, n, r, l, a, c, u, p, d
@@ -2243,7 +2247,7 @@
                         (t.prev = 4),
                         (c = n ? ''.concat(s.Z[a], '/').concat(r, '?isDev=1') : ''.concat(s.Z[a], '/').concat(r)),
                         (t.next = 8),
-                        (0, v.U2)(c)
+                        (0, m.U2)(c)
                       )
                     case 8:
                       return (u = t.sent), (p = u.data), (d = void 0 === p ? {} : p), t.abrupt('return', d)
@@ -2264,7 +2268,7 @@
           return t.apply(this, arguments)
         }
       })()
-      const Ut = Mt
+      const Mt = Gt
     },
   },
 ])
